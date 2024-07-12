@@ -14,7 +14,6 @@ var longitude;
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
     
-
     const map = new google.maps.Map(document.createElement('div'), {
       center: { lat: latitude, lng: longitude }, 
       zoom: 15
@@ -96,6 +95,10 @@ var longitude;
       const row = tbody.insertRow();
       const namecell = row.insertCell();
       namecell.textContent = place.name;
+      const addresscell = row.insertCell();
+      addresscell.textContent = place.address;
+      const websitecell = row.insertCell();
+      websitecell.textContent = place.website;
     });
     
     // Append the table to the container
