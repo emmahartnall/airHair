@@ -1,4 +1,4 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+
 <script>
   function initMap() {
     var location = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };

@@ -8,9 +8,10 @@
 </head>
 <body>
   <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
 
 <header>
-    <h1>AirHair - for smart heads</h1>
+    <h1>AirHair - for Smart Heads</h1>
 </header>
 
 <nav>
@@ -23,6 +24,24 @@
         <h2>About Us</h2>
         <p>We help you find hairdresser who will cater to your particular needs.</p>
         <p>You say what service you want and at what time you want and we will help you find a hair professional that suits your needs</p>
+    </section>
+
+    <section id="Your needs">
+        <h2>Your Needs</h2>
+    </section>
+
+    <section id="findHairdressers" class="about">
+        <h2>Find Hairdressers</h2>
+        <div>
+            <select id="distance">
+                <option value="5">5 km</option>
+                <option value="10">10 km</option>
+                <option value="15">15 km</option>
+                <option value="20">20 km</option>
+                <option value="25">25 km</option>
+            </select>
+            <button onclick="findHairdressers()">Find Hairdressers</button>
+        </div>
     </section>
 
     <section id="contact" class="contact">
