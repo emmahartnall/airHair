@@ -1,5 +1,8 @@
+  function findHairdressers(){
+    alert("Finding hairdressers near you...");
+  }
 
-<script>
+
   function initMap() {
     var location = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };
 
@@ -40,4 +43,4 @@
   }
 
   google.maps.event.addDomListener(window, 'load', initMap);
-</script>
+
