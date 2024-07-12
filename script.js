@@ -25,7 +25,7 @@ var longitude;
     // Define the request
     const request = {
         location: map.getCenter(),
-        radius: '1500',
+        radius: '5000',
         type: ['hair_care']
     };
 
@@ -56,16 +56,7 @@ var longitude;
     }
   }
 
-  function displayResults(results) {
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = ''; // Clear previous results
-
-    results.forEach(place => {
-        const placeDiv = document.createElement('div');
-        placeDiv.textContent = place.name;
-        resultsDiv.appendChild(placeDiv);
-    });
-  }
+  
 
   function createTable(results){
     const tableContainer = document.getElementById('tableContainer');
