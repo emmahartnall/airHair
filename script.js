@@ -1,4 +1,13 @@
+var latitude;
+var longitude;
+  
   function findHairdressers(){
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
 
     const map = new google.maps.Map(document.createElement('div'), {
       center: { lat: 40.7128, lng: -74.0060 }, // New York City
@@ -18,14 +27,59 @@
     // Perform the search
     service.nearbySearch(request, function(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
-           // displayResults(results);
             createTable(results);
         } else {
             console.error('Error with Places service:', status);
         }
     });
+  }
 
-    
+  function showPosition(position) {
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+    alert("Latitude: " + latitude + " Longitude: " + longitude);
+    // Use these coordinates as needed
+
+    const map = new google.maps.Map(document.createElement('div'), {
+      center: { lat: latitude, lng: longitude }, 
+      zoom: 15
+    });
+
+    // Set up the Places service
+    const service = new google.maps.places.PlacesService(map);
+
+    // Define the request
+    const request = {
+        location: map.getCenter(),
+        radius: '1500',
+        type: ['hair_care']
+    };
+
+    // Perform the search
+    service.nearbySearch(request, function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            createTable(results);
+        } else {
+            console.error('Error with Places service:', status);
+        }
+    });
+  }
+  
+  function showError(error) {
+    switch(error.code) {
+      case error.PERMISSION_DENIED:
+        alert("User denied the request for Geolocation.");
+        break;
+      case error.POSITION_UNAVAILABLE:
+        alert("Location information is unavailable.");
+        break;
+      case error.TIMEOUT:
+        alert("The request to get user location timed out.");
+        break;
+      case error.UNKNOWN_ERROR:
+        alert("An unknown error occurred.");
+        break;
+    }
   }
 
   function displayResults(results) {
