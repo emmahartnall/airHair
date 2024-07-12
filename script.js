@@ -1,10 +1,41 @@
   function findHairdressers(){
 
-    //initMap();
-    createTable();
+    const map = new google.maps.Map(document.createElement('div'), {
+      center: { lat: 40.7128, lng: -74.0060 }, // New York City
+      zoom: 15
+    });
 
-    // Example output for debugging
-    console.log("table created");
+    // Set up the Places service
+    const service = new google.maps.places.PlacesService(map);
+
+    // Define the request
+    const request = {
+        location: map.getCenter(),
+        radius: '1500',
+        type: ['hair_care']
+    };
+
+    // Perform the search
+    service.nearbySearch(request, function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            displayResults(results);
+        } else {
+            console.error('Error with Places service:', status);
+        }
+    });
+
+    createTable();
+  }
+
+  function displayResults(results) {
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = ''; // Clear previous results
+
+    results.forEach(place => {
+        const placeDiv = document.createElement('div');
+        placeDiv.textContent = place.name;
+        resultsDiv.appendChild(placeDiv);
+    });
   }
 
   function createTable(){

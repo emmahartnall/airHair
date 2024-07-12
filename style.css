@@ -64,6 +64,17 @@ footer {
     width: 80px;
     height: 80px;
 }
+
 .style-card h3 {
     margin: 0;
+}
+
+#place-picker-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#place-picker-container {
+    text-align: left;
 }
