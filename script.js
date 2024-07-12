@@ -8,36 +8,12 @@ var longitude;
     } else {
       alert("Geolocation is not supported by this browser.");
     }
-
-    const map = new google.maps.Map(document.createElement('div'), {
-      center: { lat: 40.7128, lng: -74.0060 }, // New York City
-      zoom: 15
-    });
-
-    // Set up the Places service
-    const service = new google.maps.places.PlacesService(map);
-
-    // Define the request
-    const request = {
-        location: map.getCenter(),
-        radius: '1500',
-        type: ['hair_care']
-    };
-
-    // Perform the search
-    service.nearbySearch(request, function(results, status) {
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-            createTable(results);
-        } else {
-            console.error('Error with Places service:', status);
-        }
-    });
   }
 
   function showPosition(position) {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
-    alert("Latitude: " + latitude + " Longitude: " + longitude);
+    //alert("Latitude: " + latitude + " Longitude: " + longitude);
     // Use these coordinates as needed
 
     const map = new google.maps.Map(document.createElement('div'), {
