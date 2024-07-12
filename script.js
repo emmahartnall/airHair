@@ -1,10 +1,47 @@
   function findHairdressers(){
-    alert("Finding hairdressers near you...");
-  }
 
+    //initMap();
+
+    const tableContainer = document.getElementById('tableContainer');
+    
+    // Clear any existing table
+    tableContainer.innerHTML = '';
+    
+    // Create a table element
+    const table = document.createElement('table');
+    
+    // Create the table header
+    const header = table.createTHead();
+    const headerRow = header.insertRow();
+    const headers = ['Name', 'address', 'website'];
+    
+    headers.forEach(headerText => {
+        const th = document.createElement('th');
+        th.textContent = headerText;
+        headerRow.appendChild(th);
+    });
+    
+    // Create the table body
+    const tbody = table.createTBody();
+    
+    for (let i = 0; i < 5; i++) {
+        const row = tbody.insertRow();
+        const namecell = row.insertCell();
+        namecell.textContent = `Name ${i + 1}`;
+        const addresscell = row.insertCell();
+        addresscell.textContent = `Address ${i + 1}`;
+        const websitecell = row.insertCell();
+        websitecell.textContent = `Website ${i + 1}`;
+    }
+    
+    // Append the table to the container
+    tableContainer.appendChild(table);
+  }
 
   function initMap() {
     var location = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };
+
+    //console.log(location);
 
     var map = new google.maps.Map(document.getElementById('map'), {
       center: location,
