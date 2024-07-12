@@ -13,8 +13,7 @@ var longitude;
   function showPosition(position) {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
-    //alert("Latitude: " + latitude + " Longitude: " + longitude);
-    // Use these coordinates as needed
+    
 
     const map = new google.maps.Map(document.createElement('div'), {
       center: { lat: latitude, lng: longitude }, 

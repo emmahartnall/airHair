@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    background-color: #bcacb9;
     color: #333;
 }
 button {
@@ -27,7 +27,7 @@ header {
     text-align: center;
 }
 nav {
-    background: #ff8a50;
+    background: #be617d;
     color: white;
     padding: 0.5em;
     text-align: center;
@@ -40,7 +40,7 @@ nav a {
 .container {
     padding: 2em;
 }
-.about, .services, .styles, .contact {
+.about, .contact {
     margin-bottom: 2em;
 }
 footer {
@@ -69,12 +69,3 @@ footer {
     margin: 0;
 }
 
-#place-picker-box {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-#place-picker-container {
-    text-align: left;
-}
