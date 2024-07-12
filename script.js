@@ -1,7 +1,13 @@
   function findHairdressers(){
 
     //initMap();
+    createTable();
 
+    // Example output for debugging
+    console.log("table created");
+  }
+
+  function createTable(){
     const tableContainer = document.getElementById('tableContainer');
     
     // Clear any existing table
@@ -36,6 +42,7 @@
     
     // Append the table to the container
     tableContainer.appendChild(table);
+
   }
 
   function initMap() {

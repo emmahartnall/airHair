@@ -8,7 +8,8 @@
 </head>
 <body>
   <script src="script.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXUZxgbxOA-wApIbU7JzHDfU0HAexg-vg&libraries=places"></script>
+  <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
 
 <header>
     <h1>AirHair - for Smart Heads</h1>
@@ -32,6 +33,13 @@
 
     <section id="findHairdressers" class="about">
         <h2>Find Hairdressers</h2>
+        <gmpx-api-loader key="YOUR_API_KEY_HERE" solution-channel="GMP_GE_placepicker_v1">
+        </gmpx-api-loader>
+        <div id="place-picker-box">
+          <div id="place-picker-container">
+            <gmpx-place-picker placeholder="Enter an address"></gmpx-place-picker>
+          </div>
+        </div>
         <div>
             <select id="distance">
                 <option value="5">5 km</option>
