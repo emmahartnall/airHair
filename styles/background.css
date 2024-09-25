@@ -1,0 +1,8 @@
+body {
+    background-image: url('../Images/two-young-women-looking-at-each-other.jpg');
+    /*background-image: url('../Images/people.png');*/
+    /*background-size: cover;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
