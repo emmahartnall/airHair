@@ -56,8 +56,6 @@ var longitude;
     }
   }
 
-  
-
   function createTable(results){
     const tableContainer = document.getElementById('tableContainer');
     
@@ -70,7 +68,7 @@ var longitude;
     // Create the table header
     const header = table.createTHead();
     const headerRow = header.insertRow();
-    const headers = ['Name', 'address', 'website'];
+    const headers = ['Select', 'Hair Service provider'];
     
     headers.forEach(headerText => {
         const th = document.createElement('th');
@@ -81,15 +79,10 @@ var longitude;
     // Create the table body
     const tbody = table.createTBody();
     
-
     results.forEach(place => {
       const row = tbody.insertRow();
-      const namecell = row.insertCell();
-      namecell.textContent = place.name;
-      const addresscell = row.insertCell();
-      addresscell.textContent = place.address;
-      const websitecell = row.insertCell();
-      websitecell.textContent = place.website;
+      row.insertCell().innerHTML = '<input type="checkbox">';
+      row.insertCell().textContent = place.name;
     });
     
     // Append the table to the container
