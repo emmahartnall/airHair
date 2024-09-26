@@ -21,6 +21,7 @@
 
 .tabs {
     display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap;
     justify-content: space-around; /* Space between tabs */
     border-bottom: 2px solid #743434; /* Bottom border for the tabs */
 }
