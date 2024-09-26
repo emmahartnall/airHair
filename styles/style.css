@@ -1,54 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #bcacb9;
-    color: #333;
-}
-button {
-    padding: 10px 20px;
-    background-color: #581547;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #753a5d;
-}
-
-
-header {
-    background: #753a5d;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
-nav {
-    background: #be617d;
-    color: white;
-    padding: 0.5em;
-    text-align: center;
-}
-nav a {
-    color: white;
-    margin: 0 1em;
-    text-decoration: none;
-}
 .container {
     padding: 2em;
+    flex: 1; /* This allows the content to grow and fill the space */
 }
-.about, .contact {
-    margin-bottom: 2em;
-}
-footer {
-    background: #bd1a79;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
+
 .style-card {
     background: white;
     border: 1px solid #ccc;
@@ -65,17 +19,32 @@ footer {
     height: 80px;
 }
 
-.style-card h3 {
-    margin: 0;
+.tabs {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-around; /* Space between tabs */
+    border-bottom: 2px solid #743434; /* Bottom border for the tabs */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.tab {
+    padding: 10px 20px; /* Padding for the tab buttons */
+    text-decoration: none; /* Remove underline */
+    color: #743434; /* Tab text color */
+    background-color: #e9ecef; /* Light background for the tabs */
+    border: 1px solid transparent; /* Initial border */
+    border-radius: 5px 5px 0 0; /* Rounded corners on top */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.tab:hover {
+    background-color: #743434; /* Change background on hover */
+    color: white; /* Change text color on hover */
 }
+
+.tab.active {
+    background-color: white; /* Active tab background */
+    color: #743434; /* Active tab text color */
+    border: 2px solid #743434; /* Active tab border */
+    border-bottom: none; /* Remove bottom border to connect with content */
+}
+
 
