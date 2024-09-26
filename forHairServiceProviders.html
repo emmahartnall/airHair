@@ -22,8 +22,21 @@
                 <li><a href="developmentTeam.html" class="tab">Contact Development team</a></li>
         </nav>
         <div class="container">
-            <h1>Advertise your professional hair services here.</h1>
-            
+            <h2>Please upload pictures of some haircuts you have done</h2>
+            <form id="hairstyleForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="hairstyleName">Hairstyle Name:</label>
+                    <input type="text" id="hairstyleName" name="hairstyleName" placeholder="Enter hairstyle name" required>
+                </div>
+                <div class="form-group">
+                    <label for="hairstylePhoto">Upload Photo:</label>
+                    <input type="file" id="hairstylePhoto" name="hairstylePhoto" accept="image/*" required>
+                </div>
+                <div class="preview" id="imagePreview">
+                    <p>No image selected</p>
+                </div>
+                <button type="submit">Upload Hairstyle</button>
+            </form>
         </div>
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
