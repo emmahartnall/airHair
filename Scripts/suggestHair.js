@@ -4,6 +4,10 @@ document.getElementById('hairForm').addEventListener('submit', function(event) {
     // Get the selected hair type and length
     var hairType = document.getElementById('hair-type').value;
     var hairLength = document.getElementById('hair-length').value;
+    var hairColour = document.getElementById('hair-colour').value;
+    var gender = document.getElementById('gender').value;
+
+    console.log("Gender:", gender); // Just for debugging purposes
 
     // Hide all images initially
     var images = document.querySelectorAll('.image-display img');

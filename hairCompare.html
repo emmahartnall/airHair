@@ -24,6 +24,15 @@
             
             <form>
                 <h2>Get style suggestions for your hair</h2>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonbinary">Non-binary</option>
+                    <option value="other">Other</option>
+                    <option value="preferNotToSay">Prefer not to say</option>
+                </select>
                 <label for="hair-type">Hair Type:</label>
                 <select id="hair-type" name="hair-type" required>
                     <option value="" disabled selected>Select your hair type</option>
@@ -31,6 +40,17 @@
                     <option value="wavy">Wavy</option>
                     <option value="curly">Curly</option>
                     <option value="coily">Coily</option>
+                </select>
+
+                <label for="hair-colour">Hair Colour:</label>
+                <select id="hair-colour" name="hair-colour" required>
+                    <option value="" disabled selected>Select your hair colour</option>
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                    <option value="blonde">Blonde</option>
+                    <option value="red">Red</option>
+                    <option value="gray">Gray</option>
+                    <option value="other">Other</option>
                 </select>
 
                 <label for="hair-length">Current Hair Length:</label>
@@ -59,7 +79,6 @@
                 <img id="coilyLong" src="coily-long.jpg" alt="Coily Long Hair">
             </div>
 
-       
             <button onclick="findHairdressers()">Find Hair service provider near you</button>
             <div id="tableContainer"></div>
         </div>

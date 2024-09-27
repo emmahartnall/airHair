@@ -2,7 +2,9 @@
     padding: 2em;
     flex: 1; /* This allows the content to grow and fill the space */
 }
-
+.form-group {
+    margin-bottom: 15px;
+}
 .image-display {
     text-align: center;
     margin-top: 20px;
@@ -12,7 +14,14 @@
     height: auto;
     display: none;
 }
-
+.preview {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.preview img {
+    max-width: 100%;
+    border-radius: 5px;
+}
 .style-card {
     background: white;
     border: 1px solid #ccc;
@@ -57,14 +66,6 @@
     border: 2px solid #743434; /* Active tab border */
     border-bottom: none; /* Remove bottom border to connect with content */
 }
-.preview {
-    margin-bottom: 15px;
-    text-align: center;
-}
-.preview img {
-    max-width: 100%;
-    border-radius: 5px;
-}
 .upload-container {
     background-color: white;
     padding: 20px;
@@ -73,8 +74,6 @@
     max-width: 400px;
     width: 100%;
 }
-.form-group {
-    margin-bottom: 15px;
-}
+
 
 
