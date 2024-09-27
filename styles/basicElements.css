@@ -1,6 +1,8 @@
 
 
 body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
     background-image: url('../Images/two-young-women-looking-at-each-other.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -11,17 +13,14 @@ body {
     margin: 0; 
     background-color: #eeeced; /* Fills any empty space left around the image */
 }
-button {
-    padding: 10px 20px;
-    background-color: #581547;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-button:hover {
-    background-color: #753a5d;
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5)
 }
 
 header ,footer {
@@ -45,6 +44,14 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
 }
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 input[type="text"], input[type="file"] {
     width: 100%;
     padding: 10px;
@@ -55,5 +62,16 @@ input[type="text"], input[type="file"] {
     box-sizing: border-box;
 }
 
-
-
+button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #581547;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #753a5d;
+}

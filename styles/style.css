@@ -3,6 +3,16 @@
     flex: 1; /* This allows the content to grow and fill the space */
 }
 
+.image-display {
+    text-align: center;
+    margin-top: 20px;
+}
+.image-display img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
 .style-card {
     background: white;
     border: 1px solid #ccc;
