@@ -5,15 +5,25 @@
 .form-group {
     margin-bottom: 15px;
 }
+.formImitation{
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .image-display {
     text-align: center;
     margin-top: 20px;
 }
+
 .image-display img {
     max-width: 100%;
     height: auto;
-    display: none;
 }
+
 .preview {
     margin-bottom: 15px;
     text-align: center;
@@ -37,14 +47,12 @@
     width: 80px;
     height: 80px;
 }
-
 .tabs {
     display: flex; /* Flexbox for horizontal layout */
     flex-wrap: wrap;
     justify-content: space-around; /* Space between tabs */
     border-bottom: 2px solid #743434; /* Bottom border for the tabs */
 }
-
 .tab {
     padding: 10px 20px; /* Padding for the tab buttons */
     text-decoration: none; /* Remove underline */
@@ -54,7 +62,6 @@
     border-radius: 5px 5px 0 0; /* Rounded corners on top */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
-
 .tab:hover {
     background-color: #743434; /* Change background on hover */
     color: white; /* Change text color on hover */
@@ -74,6 +81,3 @@
     max-width: 400px;
     width: 100%;
 }
-
-
-
