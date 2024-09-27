@@ -22,7 +22,7 @@
 
         <div class="container">
             
-            <form>
+            <form id="customerHairForm">
                 <h2>Get style suggestions for your hair</h2>
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender" required>
@@ -65,18 +65,7 @@
             </form>
 
             <div class="image-display" id="imageDisplay">
-                <img id="straightShort" src="straight-short.jpg" alt="Straight Short Hair">
-                <img id="straightMedium" src="straight-medium.jpg" alt="Straight Medium Hair">
-                <img id="straightLong" src="straight-long.jpg" alt="Straight Long Hair">
-                <img id="wavyShort" src="wavy-short.jpg" alt="Wavy Short Hair">
-                <img id="wavyMedium" src="wavy-medium.jpg" alt="Wavy Medium Hair">
-                <img id="wavyLong" src="wavy-long.jpg" alt="Wavy Long Hair">
-                <img id="curlyShort" src="curly-short.jpg" alt="Curly Short Hair">
-                <img id="curlyMedium" src="curly-medium.jpg" alt="Curly Medium Hair">
-                <img id="curlyLong" src="curly-long.jpg" alt="Curly Long Hair">
-                <img id="coilyShort" src="coily-short.jpg" alt="Coily Short Hair">
-                <img id="coilyMedium" src="coily-medium.jpg" alt="Coily Medium Hair">
-                <img id="coilyLong" src="coily-long.jpg" alt="Coily Long Hair">
+                <!-- Images will be displayed here -->
             </div>
 
             <button onclick="findHairdressers()">Find Hair service provider near you</button>
@@ -86,6 +75,7 @@
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
         </footer>
+        <script src="Scripts/suggestHair.js"></script>
         <script src="Scripts/script.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXUZxgbxOA-wApIbU7JzHDfU0HAexg-vg&libraries=places"></script>
         <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
