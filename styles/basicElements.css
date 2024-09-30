@@ -19,11 +19,11 @@ form {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5)
+    background-color: rgba(255, 255, 255, 0.8)
 }
 
 header ,footer {
-    background-color: rgba(255, 255, 255, 0.4); /* White background with 70% opacity */
+    background-color: rgba(255, 255, 255, 0.6); /* White background with 70% opacity */
     color: #743434;
     text-align: center;
     padding: 1em;
