@@ -8,27 +8,38 @@ document.getElementById('customerHairForm').addEventListener('submit', function(
     var imageDisplay = document.getElementById('imageDisplay');
     imageDisplay.innerHTML = ''; // Clear previous images
 
-    var img1 = document.createElement('img');
-    img1.src = "./Images/manBrown.jpg";
-    console.log('img1', img1);
-    imageDisplay.appendChild(img1);
-    console.log('imagedisplay', imageDisplay);
-    console.log('hairType', hairType);
+    const imageUrls = []
 
-    var img2 = document.createElement('img');
-    img2.src = './Images/womanBlack.jpg';
-    imageDisplay.appendChild(img2);
-    //console.log('hairLength', hairLength);
+    console.log("hairtype: " + hairType);
+    console.log("hairlength: " + hairLength);
+    console.log("haircolour: " + hairColour);
+    console.log("gender: " + gender);
+    console.log('male', gender === 'male');
+    console.log('female', gender === 'female');
 
-    var img3 = document.createElement('img');
-    img3.src = './Images/womanBlondShort.jpg';
-    imageDisplay.appendChild(img3);
-    //console.log('hairColour', hairColour);
+    if(gender ==='male' && hairType === 'straight') {
+        imageUrls.push('./Images/manBrown.jpg');
+    }
+    if (gender === 'female' && hairColour === 'black' || hairType === 'coily'){
+        imageUrls.push('./Images/womanBlack.jpg');
+    } 
+    if (gender === 'female' && hairType === 'straight' ){
+        imageUrls.push('./Images/womanBlondShort.jpg');
+    } 
+    if (gender === 'female' && hairLength === 'long' ){
+        imageUrls.push('./Images/WomanBrownShort.jpg');
+    }
+    console.log(imageUrls);
 
-    var img4 = document.createElement('img');
-    img4.src = './Images/WomanBrownShort.jpg';
-    imageDisplay.appendChild(img4);
-    //console.log('gender', gender);
-    //alert('Thank you for your feedback!');
+    if (imageUrls.length === 0) {
+        imageDisplay.textContent = "Sorry, no images have been added for this combination yet.  More to come!";
+    }
+
+    for (let i = 0; i < imageUrls.length; i++) {
+        var img = document.createElement('img');
+        img.src = imageUrls[i];
+        img.className = 'image-style-size';
+        imageDisplay.appendChild(img);
+    }
 
 });

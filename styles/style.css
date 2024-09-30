@@ -2,9 +2,11 @@
     padding: 2em;
     flex: 1; /* This allows the content to grow and fill the space */
 }
+
 .form-group {
     margin-bottom: 15px;
 }
+
 .formImitation{
     margin: auto;
     padding: 20px;
@@ -21,6 +23,13 @@
 .image-display img {
     max-width: 100%;
     height: auto;
+}
+
+.image-style-size{
+    width: 25%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .preview {
