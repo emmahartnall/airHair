@@ -20,7 +20,7 @@ document.getElementById('customerHairForm').addEventListener('submit', function(
     if(gender ==='male' && hairType === 'straight') {
         imageUrls.push('./Images/manBrown.jpg');
     }
-    if (gender === 'female' && hairColour === 'black' || hairType === 'coily'){
+    if (gender === 'female' && hairColour === 'black' || gender === 'famale' && hairType === 'coily'){
         imageUrls.push('./Images/womanBlack.jpg');
     } 
     if (gender === 'female' && hairType === 'straight' ){
