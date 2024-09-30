@@ -68,7 +68,7 @@ var longitude;
     // Create the table header
     const header = table.createTHead();
     const headerRow = header.insertRow();
-    const headers = ['Select', 'Hair Service provider'];
+    const headers = ['Select', 'Hair Service provider', '9th', '10th', '11th', '12th', '13th', '14th', '15th', '16th', '17th', '18th', '19th', '20th', '21st', '22nd', '23rd', '24th', '25th', '26th', '27th', '28th', '29th', '30th'];
     
     headers.forEach(headerText => {
         const th = document.createElement('th');
@@ -83,6 +83,9 @@ var longitude;
       const row = tbody.insertRow();
       row.insertCell().innerHTML = '<input type="checkbox">';
       row.insertCell().textContent = place.name;
+      for(let i = 0; i < (headers.length -2); i++){
+        row.insertCell().textContent = '$20';
+      }
     });
     
     // Append the table to the container
