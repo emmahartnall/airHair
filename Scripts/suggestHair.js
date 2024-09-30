@@ -17,17 +17,23 @@ document.getElementById('customerHairForm').addEventListener('submit', function(
     console.log('male', gender === 'male');
     console.log('female', gender === 'female');
 
-    if(gender ==='male' && hairType === 'straight') {
+    if(gender ==='male') {
         imageUrls.push('./Images/manBrown.jpg');
     }
-    if (gender === 'female' && hairColour === 'black' || gender === 'famale' && hairType === 'coily'){
-        imageUrls.push('./Images/womanBlack.jpg');
-    } 
-    if (gender === 'female' && hairType === 'straight' ){
+    else if (gender === 'female'){
+        if (hairType === 'straight') {
+            imageUrls.push('./Images/womanBlondShort.jpg');
+            imageUrls.push('./Images/WomanBrownShort.jpg');
+        }
+        if (hairType === 'coily' || hairColour === 'black'){
+            imageUrls.push('./Images/womanBlack.jpg');
+        }
+    }
+    else{
+        imageUrls.push('./Images/manBrown.jpg');
         imageUrls.push('./Images/womanBlondShort.jpg');
-    } 
-    if (gender === 'female' && hairLength === 'long' ){
         imageUrls.push('./Images/WomanBrownShort.jpg');
+        imageUrls.push('./Images/womanBlack.jpg');
     }
     console.log(imageUrls);
 

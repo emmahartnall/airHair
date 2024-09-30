@@ -15,7 +15,7 @@
         </header>
 
         <nav class="tabs">
-            <a href="styleSuggestions.html" class="tab">About you and your hair</a>
+            <a href="styleSuggestions.html" class="tab">About Your Hair</a>
             <a href="FindAndBookHairService.html" class="tab active">Find Service Providers</a>
             <a href="forHairServiceProviders.html" class="tab">For Hair Service Professionals</a>
             <a href="developmentTeam.html" class="tab">Contact Development team</a>
@@ -39,6 +39,12 @@
                     <input type="checkbox" id="cut" name="services[]" value="cut">
                     <label for="cut">Cut</label>
                 </div>
+
+                <!-- Hair Styling Service -->
+                <div class="service-container">
+                    <input type="checkbox" id="styling" name="services[]" value="style">
+                    <label for="styling">New Style</label>
+                </div>
         
                 <div class="service-container">
                     <input type="checkbox" id="coloring" name="services[]" value="Coloring">
@@ -54,11 +60,10 @@
                     <input type="checkbox" id="perm" name="services[]" value="perm">
                     <label for="perm">Perm</label>
                 </div>
-        
-                <!-- Hair Styling Service -->
+
                 <div class="service-container">
-                    <input type="checkbox" id="styling" name="services[]" value="style">
-                    <label for="styling">New Style</label>
+                    <input type="checkbox" id="straightening" name="services[]" value="straightening">
+                    <label for="straightening">straightening</label>
                 </div>
         
                 <!-- Beard Trim Service -->
@@ -85,7 +90,7 @@
                     <textarea id="comments" name="comments" class="comments" placeholder="Any special requests or comments..."></textarea>
                 </div>
         
-                <button onclick="findHairdressers()">Find Hair service provider near you</button>
+                <button onclick="findHairdressers()">Find Service Providers</button>
                 <div id="tableContainer"></div>
             </div>
         </div>
