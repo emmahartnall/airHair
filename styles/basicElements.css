@@ -23,7 +23,7 @@ form {
 }
 
 header ,footer {
-    background-color: rgba(255, 255, 255, 0.6); /* White background with 70% opacity */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 70% opacity */
     color: #743434;
     text-align: center;
     padding: 1em;
@@ -31,7 +31,7 @@ header ,footer {
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.4); /* White background with 70% opacity */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 70% opacity */
     color: #743434;
     color: white;
     padding: 0.5em;
