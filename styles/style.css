@@ -31,6 +31,12 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+
+#map {
+  height: 400px; /* Set height of the map */
+  width: 100%; /* Set width of the map */
+}
+
 .preview {
   margin-bottom: 15px;
   text-align: center;

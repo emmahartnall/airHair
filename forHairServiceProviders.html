@@ -19,19 +19,71 @@
         </nav>
         
         <div class="container">
-                <form id="hairstyleForm" enctype="multipart/form-data">
-                    <h2>Please upload a photo for each hairstyle you are advertising you are willing to do.</h2>
-                    <div class="form-group">
-                        <label for="fileInput">Upload Photo:</label>
-                        <input type="file" id="fileInput"  name="uploadedPhoto">
-                    </div>
-                    <img id="imgPreview" src="" alt="Preview Image" style="max-width: 60%; max-height: auto;">
-                    <button type="submit" disabled>upload Hairstyle</button>
-                </form>
+            <form id="hairdresserForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="qualifications">Qualifications:</label>
+                <textarea id="qualifications" name="qualifications" rows="4" required></textarea>
+    
+                <button type="submit">Submit Information</button>
+            </form>
+            
+            <!--<form id="locationForm">
+                <label for="latitude">Latitude:</label>
+                <input type="text" id="latitude" name="latitude" readonly required>
+    
+                <label for="longitude">Longitude:</label>
+                <input type="text" id="longitude" name="longitude" readonly required>
+    
+                <button type="submit">Submit Location</button>
+            </form>-->
+    
+            <div id="map"></div> <!-- Map container -->
+        
+            <form id="availabilityForm">
+                <h1>Please enter your availability</h1>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="startTime">Start Time:</label>
+                <input type="time" id="startTime" name="startTime" required>
+                
+                <label for="endTime">End Time:</label>
+                <input type="time" id="endTime" name="endTime" required>
+    
+                <button type="submit">Submit Availability</button>
+            </form>
+    
+            <!--<div class="formImitation">
+                <h2>Current Availability</h2>
+                <table id="availabilityTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Available Times</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div> -->
+
+            <form id="hairstyleForm" enctype="multipart/form-data">
+                <h2>Please upload an example photo.</h2>
+                <div class="form-group">
+                    <label for="fileInput">Upload Photo:</label>
+                    <input type="file" id="fileInput"  name="uploadedPhoto">
+                </div>
+                <img id="imgPreview" src="" alt="Preview Image" style="max-width: 60%; max-height: auto;">
+                <button type="submit" disabled>upload Hairstyle</button>
+            </form>
         </div>
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
         </footer>
         <script src="Scripts/photoUpload.js"></script>
+        <script src="Scripts/map.js"></script>
     </body>
 </html>
