@@ -22,6 +22,11 @@
 
         <div class="container">
             <div class="formImitation">
+                
+        
+                <button onclick="findHairdressers()">Find Service Providers</button>
+                <div id="tableContainer"></div>
+
                 <h2>Select Hair Services Required</h2>
                 
                 <div class="service-container">
@@ -62,7 +67,7 @@
 
                 <div class="service-container">
                     <input type="checkbox" id="straightening" name="services[]" value="straightening">
-                    <label for="straightening">straightening</label>
+                    <label for="straightening">Straightening</label>
                 </div>
         
                 <!-- Beard Trim Service -->
@@ -88,9 +93,6 @@
                     <label for="comments">Additional Comments:</label><br>
                     <textarea id="comments" name="comments" class="comments" placeholder="Any special requests or comments..."></textarea>
                 </div>
-        
-                <button onclick="findHairdressers()">Find Service Providers</button>
-                <div id="tableContainer"></div>
             </div>
         </div>
 

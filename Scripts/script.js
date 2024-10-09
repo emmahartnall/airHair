@@ -1,5 +1,9 @@
 var latitude;
 var longitude;
+
+document.addEventListener('DOMContentLoaded', function() {
+    findHairdressers();
+});
   
   function findHairdressers(){
 
