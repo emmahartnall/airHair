@@ -22,13 +22,16 @@
 
         <div class="container">
             <div class="formImitation">
-                
-        
-                <button onclick="findHairdressers()">Find Service Providers</button>
+                <h2>Local Hair Service Providers</h2>
                 <div id="tableContainer"></div>
 
-                <h2>Select Hair Services Required</h2>
-                
+                <h2>Hair Services Required</h2>
+
+                <div class="service-container">
+                    <input type="checkbox" id="drive" name="services[]" value="Drive">
+                    <label for="drive">Drive to your home</label>
+                </div>
+
                 <div class="service-container">
                     <input type="checkbox" id="hair-wash" name="services[]" value="Wash">
                     <label for="hair-wash">Hair Wash</label>
@@ -44,7 +47,6 @@
                     <label for="cut">Cut</label>
                 </div>
 
-                <!-- Hair Styling Service -->
                 <div class="service-container">
                     <input type="checkbox" id="styling" name="services[]" value="style">
                     <label for="styling">New Style</label>
@@ -76,23 +78,22 @@
                     <label for="beard-trim">Beard Trim</label>
                 </div>
 
-                <!-- Blow Dry Service -->
                 <div class="service-container">
                     <input type="checkbox" id="blow-dry" name="services[]" value="Dry">
                     <label for="blow-dry">Blow Dry</label>
                 </div>
 
-                <!-- Blow Dry Service -->
+                
                 <div class="service-container">
                     <input type="checkbox" id="products" name="services[]" value="products">
                     <label for="products">Gel, Wax or other hair products</label>
                 </div>
         
-                <!-- Additional Comments -->
+                <!-- Additional Comments
                 <div class="service-container">
                     <label for="comments">Additional Comments:</label><br>
                     <textarea id="comments" name="comments" class="comments" placeholder="Any special requests or comments..."></textarea>
-                </div>
+                </div>-->
             </div>
         </div>
 

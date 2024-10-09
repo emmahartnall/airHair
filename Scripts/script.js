@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create the table header
     const header = table.createTHead();
     const headerRow = header.insertRow();
-    const headers = ['Select', 'Hair Service provider', '9th', '10th', '11th', '12th', '13th', '14th', '15th', '16th', '17th', '18th', '19th', '20th', '21st', '22nd', '23rd', '24th', '25th', '26th', '27th', '28th', '29th', '30th'];
+    const headers = ['Hair Service provider', '7:00am', '7:30am','8:00am', '8:30am', '9:00am', '9:30am', '10:00am', '10:30am', '11:00am', '11:30am', '12:00pm', '12:30pm', '1:00pm', '1:30pm', '2:00pm', '2:30pm', '3:00pm', '3:30pm', '4:00pm', '4:30pm', '5:00pm', '5:30pm', '6:00pm', '6:30pm', '7:00pm', '7:30pm', '8:00pm', '8:30pm', '9:00pm', '9:30pm', '10:00pm', '10:30pm', '11pm', '11:30pm'];
     
     headers.forEach(headerText => {
         const th = document.createElement('th');
@@ -85,10 +85,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     results.forEach(place => {
       const row = tbody.insertRow();
-      row.insertCell().innerHTML = '<input type="checkbox">';
       row.insertCell().textContent = place.name;
       for(let i = 0; i < (headers.length -2); i++){
-        row.insertCell().textContent = '$20';
+        var button = document.createElement("button");
+        button.innerHTML = "$$??";
+        button.disabled = true;
+        row.insertCell().appendChild(button);
       }
     });
     
