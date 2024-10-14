@@ -128,9 +128,8 @@
   height: 80px;
 }
 .service-container {
-  display: flex; /* Use flexbox for inline display */
-  align-items: center; /* Center align items vertically */
-  margin: 10px 0;
+  margin: 10px;                   /* Space between items */
+  padding: 20px;                  /* Space inside items */
 }
 .tabs {
   display: flex; /* Flexbox for horizontal layout */
