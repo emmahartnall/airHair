@@ -92,6 +92,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var button = document.createElement("button");
     button.innerHTML = "Book";
+    button.onclick = function() {
+        window.location.href = 'booking.html';
+    };
     row.insertCell().appendChild(button);
 
     var button = document.createElement("button");
@@ -109,6 +112,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       var button = document.createElement("button");
       button.innerHTML = "Book";
+      button.onclick = function() {
+        window.location.href = 'booking.html';
+      };
       row.insertCell().appendChild(button);
 
       var button = document.createElement("button");
