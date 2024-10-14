@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define the request
     const request = {
         location: map.getCenter(),
-        radius: '5000',
+        radius: '1000',
         type: ['hair_care']
     };
 
@@ -70,11 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Create a table element
     const table = document.createElement('table');
+    table.className = 'booking-table';
     
     // Create the table header
     const header = table.createTHead();
     const headerRow = header.insertRow();
-    const headers = ['Hair professional', 'Registered', 'concierge','distance', 'price', 'appointment length','availability'];
+    const headers = ['Hair professional', 'Distance from you', 'Estimated price','Book', 'Concierge service','Availability'];
     
     headers.forEach(headerText => {
         const th = document.createElement('th');
@@ -84,23 +85,41 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Create the table body
     const tbody = table.createTBody();
+    const row = tbody.insertRow();
+    row.insertCell().textContent = 'example registered hair professional';
+    row.insertCell().textContent = '20km';
+    row.insertCell().textContent = '$100';
     
+    var button = document.createElement("button");
+    button.innerHTML = "Book";
+    row.insertCell().appendChild(button);
+
+    var button = document.createElement("button");
+    button.innerHTML = "contact";
+    button.disabled = true;
+    row.insertCell().appendChild(button);
+
+    row.insertCell().textContent = 'unknown';
+
     results.forEach(place => {
       const row = tbody.insertRow();
       row.insertCell().textContent = place.name;
-      /*
-      for(let i = 0; i < (headers.length -2); i++){
-        var button = document.createElement("button");
-        button.innerHTML = "$$??";
-        button.disabled = true;
-        row.insertCell().appendChild(button);
-      }
-      */
+      row.insertCell().textContent = '??km';
+      row.insertCell().textContent = '??$$';
+
+      var button = document.createElement("button");
+      button.innerHTML = "Book";
+      row.insertCell().appendChild(button);
+
+      var button = document.createElement("button");
+      button.innerHTML = "contact";
+      button.disabled = true;
+      row.insertCell().appendChild(button);
+      row.insertCell().textContent = 'unknown';
     });
     
     // Append the table to the container
     tableContainer.appendChild(table);
-
   }
 
   
