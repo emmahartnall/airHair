@@ -13,7 +13,7 @@
 }
 
 .booking-table th {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   padding: 12px;
   border-bottom: 2px solid #ddd;
@@ -47,19 +47,20 @@
 }
 
 .booking-table button:hover:not(:disabled) {
-  background-color: #45a049;
+  background-color: #572881;
 }
 
 /* Responsive table for smaller screens */
 @media (max-width: 600px) {
   .booking-table th, .booking-table td {
-    font-size: 14px;
+    font-size: 1em;
     padding: 8px;
   }
 }
 
 .checkbox-container{
   display:flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
@@ -83,7 +84,9 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.7);
+  overflow-x:auto;
 }
+
 .image-display {
   text-align: center;
   margin-top: 20px;
