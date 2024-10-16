@@ -58,6 +58,20 @@
   }
 }
 
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
 .checkbox-container{
   display:flex;
   flex-wrap: wrap;

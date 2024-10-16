@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create the table header
     const header = table.createTHead();
     const headerRow = header.insertRow();
-    const headers = ['Hair professional', 'Distance from you', 'Estimated price','Book', 'Concierge service','Availability'];
+    const headers = ['Hair professional', 'Distance from you (km)', 'Estimated price (AUD)','Availability','Book Appointment'];
     
     headers.forEach(headerText => {
         const th = document.createElement('th');
@@ -89,39 +89,30 @@ document.addEventListener('DOMContentLoaded', function() {
     row.insertCell().textContent = 'example registered hair professional';
     row.insertCell().textContent = '20km';
     row.insertCell().textContent = '$100';
-    
+    row.insertCell().textContent = '9am to 5pm';
     var button = document.createElement("button");
-    button.innerHTML = "Book";
+    button.innerHTML = "Book appointment";
     button.onclick = function() {
         window.location.href = 'booking.html';
     };
     row.insertCell().appendChild(button);
 
-    var button = document.createElement("button");
-    button.innerHTML = "contact";
-    button.disabled = true;
-    row.insertCell().appendChild(button);
-
-    row.insertCell().textContent = 'unknown';
+    
 
     results.forEach(place => {
       const row = tbody.insertRow();
       row.insertCell().textContent = place.name;
-      row.insertCell().textContent = '??km';
-      row.insertCell().textContent = '??$$';
+      row.insertCell().textContent = 'unknown';
+      row.insertCell().textContent = 'unknown';
+      row.insertCell().textContent = 'unknown';
 
       var button = document.createElement("button");
-      button.innerHTML = "Book";
+      button.innerHTML = "Book appointment";
+      button.disabled = true;
       button.onclick = function() {
         window.location.href = 'booking.html';
       };
       row.insertCell().appendChild(button);
-
-      var button = document.createElement("button");
-      button.innerHTML = "contact";
-      button.disabled = true;
-      row.insertCell().appendChild(button);
-      row.insertCell().textContent = 'unknown';
     });
     
     // Append the table to the container
