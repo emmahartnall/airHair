@@ -97,8 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     row.insertCell().appendChild(button);
 
-    
-
     results.forEach(place => {
       const row = tbody.insertRow();
       row.insertCell().textContent = place.name;
