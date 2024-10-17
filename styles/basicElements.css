@@ -30,6 +30,17 @@ header ,footer {
     position: relative; /* Make sure content inside is positioned relative */
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Positioning profile in the top-right */
+header .profile {
+    margin-left: auto;
+}
+
 nav {
     background-color: rgba(255, 255, 255, 0.8); /* White background with 70% opacity */
     color: #743434;
