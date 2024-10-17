@@ -91,6 +91,43 @@
   height: 80px;
 }
 
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 8px;
+}
+
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu ul li a:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown menu */
+.show {
+  display: block;
+}
+
+
 .form-group {
   margin-bottom: 15px;
 }

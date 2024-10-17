@@ -15,11 +15,17 @@
                   <h1>Hair Compare - Prototype</h1>
                 </div>
                 <div class="profile">
-                  <button class="profile-btn">
+                  <button class="profile-btn" onclick="window.location.href='customerProfile.html';">
                     <img src="./Images/profile.jpg" alt="Profile" class="profile-pic" />
                     <span>Profile</span>
                   </button>
                 </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <ul>
+                      <li><a href="#">logon</a></li>
+                      <li><a href="#">Logoff</a></li>
+                    </ul>
+                  </div>
               </div>
         </header>
 
@@ -98,7 +104,8 @@
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
         </footer>
-        <script src="Scripts/script.js"></script>
+        <script src="Scripts/header.js"></script>
+        <script src="Scripts/table.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXUZxgbxOA-wApIbU7JzHDfU0HAexg-vg&libraries=places"></script>
         <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
     </body>
