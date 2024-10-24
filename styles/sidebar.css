@@ -17,3 +17,19 @@
     margin-left: 260px;
     padding: 20px;
 }
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 70% opacity */
+    color: #743434;
+    text-align: center;
+    padding: 1em;
+    position: relative; /* Make sure content inside is positioned relative */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile {
+    margin-left: auto;
+}
