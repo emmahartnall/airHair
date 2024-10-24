@@ -12,7 +12,6 @@
     
     const table = document.createElement('table');
     table.className = 'booking-table';
-    formImitation.appendChild(table);
     
     // Create the table header
     const header = table.createTHead();
@@ -55,8 +54,7 @@
       row.insertCell().appendChild(button);
     });
     
-    // Append the table to the container
-    tableContainer.appendChild(table);
+    formImitation.appendChild(table);
   }
 
   
