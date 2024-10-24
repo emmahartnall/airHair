@@ -1,0 +1,19 @@
+
+
+/* Sidebar container */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Content section */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}

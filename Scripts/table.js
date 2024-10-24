@@ -1,5 +1,3 @@
-
-
   document.addEventListener('DOMContentLoaded', function() {
 
     // Set the minimum date for the date picker to today
@@ -8,8 +6,6 @@
     document.getElementById('datePicker').value = today;
   });
   
- 
-
   function createTable(results){
     const tableContainer = document.getElementById('tableContainer');
     

@@ -6,100 +6,47 @@
         <title>Hair Compare</title>
         <link rel="icon" href="images/hairCompareicon.png"/>
         <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="Styles/sidebar.css"/>
         <link rel="stylesheet" href="Styles/basicElements.css"/>
     </head>
     <body>
-        <header>
-            <div class="container">
+        <main>
+            <div class="sidebar">
+                <input type="checkbox" id="drive" ><label for="drive">Drive to your home</label>
+                <input type="checkbox" id="hair-wash" ><label for="hair-wash">Hair Wash</label>
+                <input type="checkbox" id="treatment" ><label for="treatment">Treatment</label>
+                <input type="checkbox" id="cut"><label for="cut">Cut</label>
+                <input type="checkbox" id="styling"><label for="styling">New Style</label>
+                <input type="checkbox" id="coloring"><label for="coloring">Colour</label>
+                <input type="checkbox" id="highlights"><label for="highlights">Highlights</label>
+                <input type="checkbox" id="perm"><label for="perm">Perm</label>
+                <input type="checkbox" id="straightening"><label for="straightening">Straightening</label>
+                <input type="checkbox" id="blow-dry"><label for="blow-dry">Blow Dry</label>
+                <input type="checkbox" id="products"><label for="products">Gel, Wax or other hair products</label>
+            </div>
+        
+            <div class="content">
                 <div>
-                  <h1>Hair Compare - Prototype</h1>
+                    <h1>Hair Compare - Prototype</h1>
                 </div>
                 <div class="profile">
-                  <button class="profile-btn" onclick="window.location.href='customerProfile.html';">
-                    <img src="./Images/profile.jpg" alt="Profile" class="profile-pic" />
-                    <span>Profile</span>
-                  </button>
+                    <button class="profile-btn" onclick="window.location.href='customerProfile.html';">
+                        <img src="./Images/profile.jpg" alt="Profile" class="profile-pic" />
+                        <span>Profile</span>
+                    </button>
                 </div>
-                <div class="dropdown-menu" id="dropdownMenu">
-                    <ul>
-                      <li><a href="#">logon</a></li>
-                      <li><a href="#">Logoff</a></li>
-                    </ul>
-                  </div>
-              </div>
-        </header>
-
-        <nav class="tabs">
-            <a href="home.html" class="tab active">Home Page</a>
-            <a href="developmentTeam.html" class="tab">Contact Development team</a>
-        </nav>
-
-        <div class="container">
-            <div class="formImitation">
-                <a href="registerHairDresser.html" class="button">Register as a Hair Dresser</a>
-                <a href="referHairDresser.html" class="button">Refer a Hair Dresser</a>
-                <a href="manualBooking.html" class="button">Consiege service i.e. manual booking</a>
-                
-                <div class="checkbox-container">
-                    <div class="service-container">
-                        <input type="checkbox" id="drive" name="services[]" value="Drive">
-                        <label for="drive">Drive to your home</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="hair-wash" name="services[]" value="Wash">
-                        <label for="hair-wash">Hair Wash</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="treatment" name="services[]" value="Treatment">
-                        <label for="treatment">Treatment</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="cut" name="services[]" value="cut">
-                        <label for="cut">Cut</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="styling" name="services[]" value="style">
-                        <label for="styling">New Style</label>
-                    </div>
-            
-                    <div class="service-container">
-                        <input type="checkbox" id="coloring" name="services[]" value="Coloring">
-                        <label for="coloring">Colour</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="highlights" name="services[]" value="Highlights">
-                        <label for="highlights">Highlights</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="perm" name="services[]" value="perm">
-                        <label for="perm">Perm</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="straightening" name="services[]" value="straightening">
-                        <label for="straightening">Straightening</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="blow-dry" name="services[]" value="Dry">
-                        <label for="blow-dry">Blow Dry</label>
-                    </div>
-
-                    <div class="service-container">
-                        <input type="checkbox" id="products" name="services[]" value="products">
-                        <label for="products">Gel, Wax or other hair products</label>
-                    </div>
+                <nav class="tabs">
+                    <a href="home.html" class="tab active">Home Page</a>
+                    <a href="developmentTeam.html" class="tab">Contact Development team</a>
+                </nav>
+                <div class="formImitation">
+                    <a href="registerHairDresser.html" class="button">Register as a Hair Dresser</a>
+                    <a href="referHairDresser.html" class="button">Refer a Hair Dresser</a>
+                    <input type="date" id="datePicker" name="datePicker">
+                    <div id="tableContainer"></div>
                 </div>
-                <input type="date" id="datePicker" name="datePicker">
-                <div id="tableContainer"></div>
             </div>
-        </div>
+        </main>
 
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
