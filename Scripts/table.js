@@ -5,10 +5,14 @@
     
     // Clear any existing table
     tableContainer.innerHTML = '';
+
+    const formImitation = document.createElement('div');
+    formImitation.className = 'formImitation';
+    tableContainer.appendChild(formImitation);
     
-    // Create a table element
     const table = document.createElement('table');
     table.className = 'booking-table';
+    formImitation.appendChild(table);
     
     // Create the table header
     const header = table.createTHead();

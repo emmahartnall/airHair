@@ -178,6 +178,10 @@
   position: relative;
 }
 
+.profile {
+  margin-left: auto;
+}
+
 .profile-btn {
   background-color: #555;
   color: white;

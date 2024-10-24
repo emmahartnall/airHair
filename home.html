@@ -10,43 +10,85 @@
         <link rel="stylesheet" href="Styles/basicElements.css"/>
     </head>
     <body>
+        <header>
+            <div class="container">
+                <div>
+                  <h1>Hair Compare - Prototype</h1>
+                </div>
+                <div class="profile">
+                  <button class="profile-btn" onclick="window.location.href='customerProfile.html';">
+                    <img src="./Images/profile.jpg" alt="Profile" class="profile-pic" />
+                    <span>Profile</span>
+                  </button>
+                </div>
+              </div>
+        </header>
+        <nav class="tabs">
+            <a href="home.html" class="tab">Home Page</a>
+            <a href="developmentTeam.html" class="tab active">Contact Development team</a>
+        </nav>
         <main>
-            <div class="sidebar">
-                <input type="checkbox" id="drive" ><label for="drive">Drive to your home</label>
-                <input type="checkbox" id="hair-wash" ><label for="hair-wash">Hair Wash</label>
-                <input type="checkbox" id="treatment" ><label for="treatment">Treatment</label>
+            <aside>
+                <input type="date" id="datePicker" name="datePicker">
+
+                <h3>About your hair</h3>
+                <label for="hair-type">Hair Type:</label>
+                <select id="hair-type" name="hair-type" >
+                    <option value="" disabled selected>Select your hair type</option>
+                    <option value="straight">Straight</option>
+                    <option value="wavy">Wavy</option>
+                    <option value="curly">Curly</option>
+                    <option value="coily">Coily</option>
+                </select>
+
+                <label for="hair-colour">Hair Colour:</label>
+                <select id="hair-colour" name="hair-colour" >
+                    <option value="" disabled selected>Select your hair colour</option>
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                    <option value="blonde">Blonde</option>
+                    <option value="red">Red</option>
+                    <option value="gray">Gray</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="hair-length">Current Hair Length:</label>
+                <select id="hair-length" name="hair-length" >
+                    <option value="" disabled selected>Select your hair length</option>
+                    <option value="short">Short (Above shoulders)</option>
+                    <option value="medium">Medium (Shoulder length)</option>
+                    <option value="long">Long (Below shoulders)</option>
+                </select>
+
+                <h3>Services Offered</h3>
+
+                <label for="style">New Hair style:</label>
+                <select id="style" >
+                    <option value="" disabled selected>Select Style</option>
+                    <option value="Bob">Bob</option>
+                    <option value="crew cut">Crew cut</option>
+                    <option value="short back and sides">Short back and sides</option>
+                    <option value="layers">long layers</option>
+                </select>
+
+                <input type="checkbox" id="hair-wash" ><label for="hair-wash">Wash</label>
                 <input type="checkbox" id="cut"><label for="cut">Cut</label>
-                <input type="checkbox" id="styling"><label for="styling">New Style</label>
+                <input type="checkbox" id="dry"><label for="dry">Dry</label>
+                <input type="checkbox" id="drive"><label for="drive">Drive to your Home</label>
+                <input type="checkbox" id="advice"><label for="advice">Styling Advice</label>
+                <input type="checkbox" id="massage"><label for="massage">Scalp Massage</label>
+                <input type="checkbox" id="chair" ><label for="chair">Heated Chair</label>
+                <input type="checkbox" id="drink" ><label for="drink">Beverage</label>
+                <input type="checkbox" id="treatment" ><label for="treatment">Treatment</label>
                 <input type="checkbox" id="coloring"><label for="coloring">Colour</label>
                 <input type="checkbox" id="highlights"><label for="highlights">Highlights</label>
                 <input type="checkbox" id="perm"><label for="perm">Perm</label>
                 <input type="checkbox" id="straightening"><label for="straightening">Straightening</label>
-                <input type="checkbox" id="blow-dry"><label for="blow-dry">Blow Dry</label>
-                <input type="checkbox" id="products"><label for="products">Gel, Wax or other hair products</label>
-            </div>
-        
+                <input type="checkbox" id="products"><label for="products">Products</label>
+                <a href="registerHairDresser.html" class="button">Advertise your hair services for free</a>
+            </aside>
             <div class="content">
-                <div class="header">
-                    <div>
-                        <h1>Hair Compare - Prototype</h1>
-                    </div>
-                    <div class="profile">
-                        <button class="profile-btn" onclick="window.location.href='customerProfile.html';">
-                            <img src="./Images/profile.jpg" alt="Profile" class="profile-pic" />
-                            <span>Profile</span>
-                        </button>
-                    </div>
-                </div>
-                <nav class="tabs">
-                    <a href="home.html" class="tab active">Home Page</a>
-                    <a href="developmentTeam.html" class="tab">Contact Development team</a>
-                </nav>
-                <div class="formImitation">
-                    <a href="registerHairDresser.html" class="button">Register as a Hair Dresser</a>
-                    <a href="referHairDresser.html" class="button">Refer a Hair Dresser</a>
-                    <input type="date" id="datePicker" name="datePicker">
-                    <div id="tableContainer"></div>
-                </div>
+                <div id="tableContainer"></div>
             </div>
         </main>
 
