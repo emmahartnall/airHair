@@ -1,11 +1,14 @@
-var latitude;
-var longitude;
+  var latitude;
+  var longitude;
 
-document.addEventListener('DOMContentLoaded', function() {
-    const today = new Date().toISOString().split('T')[0];
+  document.addEventListener('DOMContentLoaded', function() {
+    findHairdressers();  
+
+    // Set the minimum date for the date picker to today
+    var today = new Date();
+    today = new Date().toISOString().split('T')[0];
     document.getElementById('datePicker').value = today;
-    findHairdressers();
-});
+  });
   
   function findHairdressers(){
 
