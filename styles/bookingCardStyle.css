@@ -1,0 +1,42 @@
+ /* Styling for price section */
+ .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Styling for number of bookings */
+.bookings {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Styling for star rating */
+.rating {
+    margin-top: 10px;
+    color: #f39c12;
+}
+
+/* Styling for distance */
+.distance {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3498db;
+}
+
+/* Styling for available times section */
+.available-times {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Styling for each time slot */
+.time-slot {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}

@@ -1,6 +1,5 @@
   function createTable(results){
     const tableContainer = document.getElementById('tableContainer');
-    //alert('start create table');
     
     // Clear any existing table
     tableContainer.innerHTML = '';
@@ -21,15 +20,16 @@
     }
 
     results.forEach(place => {
-      alert('results api call');
+      //alert('results api call');
       createRowContent(tbody);
     });
+   // alert("end of create table");
 
     formImitation.appendChild(table);
   }
 
   function createRowContent(tbody){
-    alert('Create Row function');
+    //alert('Create Row function');
     const row = tbody.insertRow();
 
     // Create the main container div
@@ -64,10 +64,34 @@
     contentDiv.classList.add('content-div');
     contentDiv.style.marginTop = '10px';
 
-    // Add a paragraph of text to the content div
-    const paragraph = document.createElement('p');
-    paragraph.textContent = 'Bit of a desciption goes here.';
-    contentDiv.appendChild(paragraph);
+    const starDiv = document.createElement('div');
+    starDiv.classList.add('rating');
+    starDiv.textContent = '⭐⭐⭐⭐☆ (4.2)';
+    contentDiv.appendChild(starDiv);
+
+    const numBookDiv = document.createElement('div');
+    numBookDiv.classList.add('Booking');
+    numBookDiv.textContent = '45 bookings';
+    contentDiv.appendChild(numBookDiv);
+
+    const distanceDiv = document.createElement('div');
+    distanceDiv.classList.add('distance');
+    distanceDiv.textContent = 'Distance from you (meters): 250';
+    contentDiv.appendChild(distanceDiv);
+
+    const timesDiv = document.createElement('div');
+    timesDiv.classList.add('available-times');
+    contentDiv.appendChild(timesDiv);
+
+    const timeSlotDiv = document.createElement('div');
+    timeSlotDiv.classList.add('time-slot');
+    timeSlotDiv.textContent = '9:00 AM';
+    timesDiv.appendChild(timeSlotDiv);
+
+    const priceDiv = document.createElement('div');
+    priceDiv.classList.add('price');
+    priceDiv.textContent = 'Price: $25';
+    contentDiv.appendChild(priceDiv);
 
     // Add a button to the content div
     const button = document.createElement('button');
@@ -94,63 +118,5 @@
     row.appendChild(mainDiv);
     //alert('end of loop');
   }
-
-  function createTable2(results){
-    const tableContainer = document.getElementById('tableContainer');
-    
-    // Clear any existing table
-    tableContainer.innerHTML = '';
-
-    const formImitation = document.createElement('div');
-    formImitation.className = 'formImitation';
-    tableContainer.appendChild(formImitation);
-    
-    const table = document.createElement('table');
-    table.className = 'booking-table';
-    
-    // Create the table header
-    const header = table.createTHead();
-    const headerRow = header.insertRow();
-    const headers = ['Hair professional','Info','Distance from you (km)', 'Estimated price (AUD)','Availability','Book Appointment'];
-    
-    headers.forEach(headerText => {
-        const th = document.createElement('th');
-        th.textContent = headerText;
-        headerRow.appendChild(th);
-    });
-    
-    // Create the table body
-    const tbody = table.createTBody();
-    const row = tbody.insertRow();
-    row.insertCell().textContent = 'example registered hair professional';
-    row.insertCell().textContent = '20km';
-    row.insertCell().textContent = '$100';
-    row.insertCell().textContent = '9am to 5pm';
-    var button = document.createElement("button");
-    button.innerHTML = "Book appointment";
-    button.onclick = function() {
-        window.location.href = 'booking.html';
-    };
-    row.insertCell().appendChild(button);
-
-    results.forEach(place => {
-      const row = tbody.insertRow();
-      row.insertCell().textContent = place.name;
-      row.insertCell().textContent = 'unknown';
-      row.insertCell().textContent = 'unknown';
-      row.insertCell().textContent = 'unknown';
-
-      var button = document.createElement("button");
-      button.innerHTML = "Book appointment";
-      button.disabled = true;
-      button.onclick = function() {
-        window.location.href = 'booking.html';
-      };
-      row.insertCell().appendChild(button);
-    });
-    
-    formImitation.appendChild(table);
-  }
-
   
 
