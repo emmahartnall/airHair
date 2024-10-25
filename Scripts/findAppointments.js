@@ -1,0 +1,3 @@
+function findAppointments() {
+    findHairdressers();  
+}

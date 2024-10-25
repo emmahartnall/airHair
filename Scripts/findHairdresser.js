@@ -36,10 +36,11 @@ function showPosition(position) {
   // Perform the search
   service.nearbySearch(request, function(results, status) {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
-          createTable(results);
+          
       } else {
           console.error('Error with Places service:', status);
       }
+      createTable(results);
   });
 }
 

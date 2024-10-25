@@ -79,6 +79,8 @@
                 <div id="appointment-length">
                     Current estimate time for appointment: <span id="length-display">0 minutes</span>
                     Please select required services to get an estimate.
+                    <!-- Button that triggers finthe JavaScript function -->
+                    <button onclick="findAppointments()">Find appointments available</button>
                 </div>
                 <div id="tableContainer"></div>
             </div>
@@ -87,6 +89,7 @@
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
         </footer>
+        <script src="Scripts/findAppointments.js"></script>"
         <script src="Scripts/findHairdresser.js"></script>
         <script src="Scripts/table.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXUZxgbxOA-wApIbU7JzHDfU0HAexg-vg&libraries=places" async defer></script>
