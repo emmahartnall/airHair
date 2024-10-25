@@ -40,17 +40,6 @@
                     <option value="coily">Coily</option>
                 </select>
 
-                <label for="hair-colour">Hair Colour:</label>
-                <select id="hair-colour" name="hair-colour" >
-                    <option value="" disabled selected>Select your hair colour</option>
-                    <option value="black">Black</option>
-                    <option value="brown">Brown</option>
-                    <option value="blonde">Blonde</option>
-                    <option value="red">Red</option>
-                    <option value="gray">Gray</option>
-                    <option value="other">Other</option>
-                </select>
-
                 <label for="hair-length">Current Hair Length:</label>
                 <select id="hair-length" name="hair-length" >
                     <option value="" disabled selected>Select your hair length</option>
@@ -87,7 +76,10 @@
                 <a href="registerHairDresser.html" class="button">Advertise your hair services for free</a>
             </aside>
             <div class="content">
-                <h3>Please select required services on the left hand side, to find available appointments, and give an estimate of appointment length</h3>
+                <div id="appointment-length">
+                    Current estimate time for appointment: <span id="length-display">0 minutes</span>
+                    Please select required services to get an estimate.
+                </div>
                 <div id="tableContainer"></div>
             </div>
         </main>
