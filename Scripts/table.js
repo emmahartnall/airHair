@@ -1,7 +1,6 @@
-  
-  
   function createTable(results){
     const tableContainer = document.getElementById('tableContainer');
+    //alert('start create table');
     
     // Clear any existing table
     tableContainer.innerHTML = '';
@@ -9,23 +8,28 @@
     const formImitation = document.createElement('div');
     formImitation.className = 'formImitation';
     tableContainer.appendChild(formImitation);
+    //alert('Create table');
     
     const table = document.createElement('table');
     table.className = 'booking-table';
     
-    // Create the table header
-    const header = table.createTHead();
-    const headerRow = header.insertRow();
-    const headers = ['Info'];
-    
-    headers.forEach(headerText => {
-        const th = document.createElement('th');
-        th.textContent = headerText;
-        headerRow.appendChild(th);
-    });
-    
     // Create the table body
     const tbody = table.createTBody();
+
+    for (let i = 0; i < 2; i++) {
+      createRowContent(tbody);
+    }
+
+    results.forEach(place => {
+      alert('results api call');
+      createRowContent(tbody);
+    });
+
+    formImitation.appendChild(table);
+  }
+
+  function createRowContent(tbody){
+    alert('Create Row function');
     const row = tbody.insertRow();
 
     // Create the main container div
@@ -47,7 +51,7 @@
 
     // Add some text to the header
     const title = document.createElement('span');
-    title.textContent = 'Complex Div Title';
+    title.textContent = 'Example Hairdresser';
     title.style.fontSize = '20px';
     title.style.fontWeight = 'bold';
     headerDiv.appendChild(title);
@@ -62,12 +66,12 @@
 
     // Add a paragraph of text to the content div
     const paragraph = document.createElement('p');
-    paragraph.textContent = 'This is a more detailed description inside the complex div. It has multiple parts and may include dynamic data or elements.';
+    paragraph.textContent = 'Bit of a desciption goes here.';
     contentDiv.appendChild(paragraph);
 
     // Add a button to the content div
     const button = document.createElement('button');
-    button.textContent = 'Click Me';
+    button.textContent = 'Book Appointment';
     button.style.padding = '10px 20px';
     button.style.backgroundColor = '#007bff';
     button.style.color = '#fff';
@@ -77,7 +81,7 @@
 
     // Button click event
     button.addEventListener('click', function() {
-      alert('Button clicked!');
+      //alert('Button clicked!');
     });
 
     // Append the button to the content div
@@ -88,7 +92,7 @@
 
     // Finally, append the main div to the row
     row.appendChild(mainDiv);
-    formImitation.appendChild(table);
+    //alert('end of loop');
   }
 
   function createTable2(results){
