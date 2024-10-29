@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="Styles/basicElements.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+              <h1>Hair Compare - Prototype</h1>
+              <h2>Customers - Find an appointment at a time that suits you.</h2>
+              <h2>Hairdressers - Take control of your time and life.  Choose which services you offer, at which price on which days.</h2>
+            </div>
+            <div class="profile">
+              <button class="profile-btn" onclick="window.location.href='customerProfile.html';">
+                <img src="./Images/profile.jpg" alt="Profile" class="profile-pic" />
+                <span>Profile</span>
+              </button>
+            </div>
+          </div>
+    </header>
+
+    <nav class="tabs">
+        <a href="home.html" class="tab">Home Page</a>
+        <a href="developmentTeam.html" class="tab active">Contact Development team</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="booking-container">
+            <form id="booking-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hair Compare. All rights reserved.</p>
+    </footer>
+
+
+<script>
+    document.getElementById('booking-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Your appointment has been booked!');
+        // You can add backend integration here, like sending form data to a server
+    });
+</script>
+
+</body>
+</html>
