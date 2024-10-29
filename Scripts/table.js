@@ -96,6 +96,8 @@
     // Add a button to the content div
     const button = document.createElement('button');
     button.textContent = 'Book Appointment';
+    button.href = '#bookAppointment';
+    button.className = 'button';
     button.style.padding = '10px 20px';
     button.style.backgroundColor = '#007bff';
     button.style.color = '#fff';
