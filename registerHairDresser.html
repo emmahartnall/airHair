@@ -21,7 +21,7 @@
         
         <nav class="tabs">
             <a href="home.html" class="tab">Home Page</a>
-            <a href="registerHairDresser.html" class="tab active">Register As Hairdresser</a>
+            <a href="registerHairDresser.html" class="tab active">As Hairdresser</a>
             <a href="userProfile.html" class="tab">User Profile</a>
             <a href="myBookings.html" class="tab">Bookings</a>
             <a href="developmentTeam.html" class="tab">Contact</a>
@@ -29,11 +29,45 @@
         
         <div class="container">
             <form id="hairdresserForm">
+                <label>
+                    <input type="checkbox" name="services" value="Haircut">
+                    Would you like to register as a hairstylist?
+                </label><br>
+
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
+                <input type="text" required>
+
+                <label for="name">Location:</label>
+                <input type="text"  required>
+
+                <label for="salon">Choose your salon:</label>
+                <select id="salon" name="salon">
+                    <option value="" disabled selected>Select a salon</option>
+                    <option value="freelancers">Freelance</option>
+                    <option value="Salon A">Salon A</option>
+                    <option value="Salon B">Salon B</option>
+                </select>
+                <label for="years">Years of experience:</label>
+                <input type="number" min="0" placeholder="Years" style="width: 60px;">
+
                 <label for="qualifications">Qualifications:</label>
-                <textarea id="qualifications" name="qualifications" rows="4" required></textarea>
+                <label>
+                    <input type="checkbox" name="qualifications" value="Certificate III in Hairdressing">
+                    Certificate III in Hairdressing (SHB30416)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="qualifications" value="Certificate IV in Hairdressing">
+                    Certificate IV in Hairdressing (SHB40116)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="qualifications" value="Diploma of Salon Management">
+                    Diploma of Hairdressing (SHB50116)
+                </label><br>
+                <label>
+                    <input type="checkbox" name="qualifications" value="Barbering Certificate">
+                    Advanced Diploma of Hairdressing (SHB50216)
+                </label><br>
+                
             
                 <label for="date">Select Date:</label>
                 <input type="date" id="date" name="date" required>
