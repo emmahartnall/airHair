@@ -1,8 +1,7 @@
- /* Styling for price section */
- .price {
-    font-size: 24px;
-    font-weight: bold;
-    color: #27ae60;
+ /* Styling for available times section */
+.available-times {
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 /* Styling for number of bookings */
@@ -12,11 +11,7 @@
     color: #555;
 }
 
-/* Styling for star rating */
-.rating {
-    margin-top: 10px;
-    color: #f39c12;
-}
+
 
 /* Styling for distance */
 .distance {
@@ -25,11 +20,29 @@
     color: #3498db;
 }
 
-/* Styling for available times section */
-.available-times {
-    margin-top: 15px;
-    font-size: 14px;
+
+
+/* Styling for price section */
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
 }
+
+
+.status-confirmed {
+    color: green;
+    font-weight: bold;
+}
+.status-pending {
+    color: orange;
+    font-weight: bold;
+}
+.status-cancelled {
+    color: red;
+    font-weight: bold;
+}
+
 
 /* Styling for each time slot */
 .time-slot {
@@ -39,4 +52,10 @@
     padding: 5px 10px;
     border-radius: 5px;
     margin: 5px 0;
+}
+
+/* Styling for star rating */
+.rating {
+    margin-top: 10px;
+    color: #f39c12;
 }
