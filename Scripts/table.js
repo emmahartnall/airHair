@@ -42,27 +42,56 @@
     mainDiv.style.margin = '10px';
     mainDiv.style.backgroundColor = '#f9f9f9';
 
-    // Create a header div
     const headerDiv = document.createElement('div');
     headerDiv.classList.add('header-div');
     headerDiv.style.display = 'flex';
     headerDiv.style.justifyContent = 'space-between';
     headerDiv.style.alignItems = 'center';
 
-    // Add some text to the header
+    // Hairdresser name
     const title = document.createElement('span');
     title.textContent = 'Example Hairdresser';
     title.style.fontSize = '20px';
     title.style.fontWeight = 'bold';
     headerDiv.appendChild(title);
-
-    // Add header div to the main container
     mainDiv.appendChild(headerDiv);
 
-    // Create a content div
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('content-div');
     contentDiv.style.marginTop = '10px';
+
+    const verifiedDiv = document.createElement('div');
+    verifiedDiv.classList.add('Verified');
+    verifiedDiv.textContent = 'Verified';
+    contentDiv.appendChild(verifiedDiv);
+
+    // verified icon
+    const verifiedSVG = document.createElement('svg');
+    verifiedSVG.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    verifiedSVG.setAttribute('width', '16');
+    verifiedSVG.setAttribute('height', '16');
+    verifiedSVG.setAttribute('viewBox', '0 0 24 24');
+    verifiedSVG.setAttribute('fill', 'none');
+     
+    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    circle.setAttribute('cx', '12');
+    circle.setAttribute('cy', '12');
+    circle.setAttribute('r', '12');
+    circle.setAttribute('stroke', '#FFF');
+    circle.setAttribute('stroke-width', '2');
+    circle.setAttribute('line-cap', 'round');
+    circle.setAttribute('line-join', 'round');
+    verifiedSVG.appendChild(circle);
+
+    const path = document.createElementNS('XXXXXXXXXXXXXXXXXXXXXXXXXX', 'path');
+    path.setAttribute('d', 'M9 12l2 2 4-4');
+    path.setAttribute('stroke', '#FFF');
+    path.setAttribute('stroke-width', '2');
+    path.setAttribute('line-cap', 'round');
+    path.setAttribute('line-join', 'round');
+    verifiedSVG.appendChild(path);
+
+    contentDiv.appendChild(verifiedSVG);
 
     const starDiv = document.createElement('div');
     starDiv.classList.add('rating');
@@ -96,12 +125,9 @@
     // Add a button to the content div
     const button = document.createElement('button');
     button.textContent = 'Book Appointment';
-    button.href = '#bookAppointment';
-
-    // Button click event
-    button.addEventListener('click', function() {
-      //alert('Button clicked!');
-    });
+    button.onclick = function(){
+      window.location.href = 'bookAppointment.html';
+    };
 
     // Append the button to the content div
     contentDiv.appendChild(button);
