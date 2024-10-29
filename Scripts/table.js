@@ -97,13 +97,6 @@
     const button = document.createElement('button');
     button.textContent = 'Book Appointment';
     button.href = '#bookAppointment';
-    button.className = 'button';
-    button.style.padding = '10px 20px';
-    button.style.backgroundColor = '#007bff';
-    button.style.color = '#fff';
-    button.style.border = 'none';
-    button.style.borderRadius = '5px';
-    button.style.cursor = 'pointer';
 
     // Button click event
     button.addEventListener('click', function() {

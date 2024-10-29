@@ -1,62 +1,3 @@
-/* General table styling */
-.booking-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-  margin: 20px 0;
-}
-
-/* Table header styling */
-.booking-table thead {
-  background-color: #590e4e;
-  color: white;
-}
-
-.booking-table th {
-  font-size: 1em;
-  font-weight: bold;
-  padding: 12px;
-  border-bottom: 2px solid #ddd;
-  text-align: center;
-}
-
-/* Table body styling */
-.booking-table td {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-.booking-table tbody tr:hover {
-  background-color: #f1f1f1;
-}
-
-/* Button styling for booking */
-.booking-table button {
-  padding: 8px 12px;
-  background-color: #6b3956;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.booking-table button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.booking-table button:hover:not(:disabled) {
-  background-color: #572881;
-}
-
-/* Responsive table for smaller screens */
-@media (max-width: 600px) {
-  .booking-table th, .booking-table td {
-    font-size: 1em;
-    padding: 8px;
-  }
-}
 
 .button {
   padding: 8px 12px;
@@ -78,8 +19,6 @@
   flex-direction: row;
 }
 
-
-
 .container {
   width: 100%;
   display: flex;
@@ -91,42 +30,6 @@
   margin-top: 15px;
   width: 100%;
   height: 80px;
-}
-
-/* Dropdown menu styles */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 50px;
-  right: 0;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.dropdown-menu ul li {
-  padding: 8px;
-}
-
-.dropdown-menu ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-.dropdown-menu ul li a:hover {
-  background-color: #ddd;
-}
-
-/* Show dropdown menu */
-.show {
-  display: block;
 }
 
 
@@ -141,13 +44,6 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.7);
   overflow-x:auto;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  align-items: left;
-  justify-content: space-between;
 }
 
 .image-display {
@@ -180,36 +76,6 @@
 .preview img {
   max-width: 100%;
   border-radius: 5px;
-}
-
-/* Profile button */
-.profile {
-  position: relative;
-}
-
-.profile {
-  margin-left: auto;
-}
-
-.profile-btn {
-  background-color: #555;
-  color: white;
-  border: none;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.profile-btn img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.profile-btn span {
-  font-size: 16px;
 }
 
 .style-card {
