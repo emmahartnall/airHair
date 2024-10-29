@@ -21,36 +21,17 @@
         </header>
         <nav class="tabs">
             <a href="home.html" class="tab active">Home Page</a>
-            <a href="registerHairDresser.html" class="tab">Register As Hairdresser</a>
-            <a href="userProfile.html" class="tab">User Profile</a>
+            <a href="registerHairDresser.html" class="tab">As Hairdresser</a>
+            <a href="userProfile.html" class="tab">About You</a>
             <a href="myBookings.html" class="tab">Bookings</a>
             <a href="developmentTeam.html" class="tab">Contact</a>
         </nav>
         <main>
             <aside>
-                <input type="date" id="datePicker" name="datePicker">
-
-                <h3>About your hair</h3>
-                <label for="hair-type">Hair Type:</label>
-                <select id="hair-type" name="hair-type" >
-                    <option value="" disabled selected>Select your hair type</option>
-                    <option value="straight">Straight</option>
-                    <option value="wavy">Wavy</option>
-                    <option value="curly">Curly</option>
-                    <option value="coily">Coily</option>
-                </select>
-
-                <label for="hair-length">Current Hair Length:</label>
-                <select id="hair-length" name="hair-length" >
-                    <option value="" disabled selected>Select your hair length</option>
-                    <option value="short">Short (Above shoulders)</option>
-                    <option value="medium">Medium (Shoulder length)</option>
-                    <option value="long">Long (Below shoulders)</option>
-                </select>
-
-                <h3>Services Offered</h3>
-
-                <label for="style">New Hair style:</label>
+                <div>
+                    Appointment length: <span id="length-display">0 minutes</span>
+                    Please select below services to update extimate.
+                </div>
                 <select id="style" >
                     <option value="" disabled selected>Select Style</option>
                     <option value="Bob">Bob</option>
@@ -73,15 +54,10 @@
                 <input type="checkbox" id="perm"><label for="perm">Perm</label>
                 <input type="checkbox" id="straightening"><label for="straightening">Straightening</label>
                 <input type="checkbox" id="products"><label for="products">Products</label>
-                
             </aside>
-            <div class="content">
-                <div id="appointment-length" class="formImitation">
-                    Current estimate time for appointment: <span id="length-display">0 minutes</span>
-                    Please select required services to get an estimate.
-                    <!-- Button that triggers finthe JavaScript function -->
-                    <button onclick="findAppointments()">Find appointments available</button>
-                </div>
+            <div class="formImitation">
+                <input type="date" id="datePicker" name="datePicker">
+                <button onclick="findAppointments()">Find appointments available</button>
                 <div id="tableContainer"></div>
             </div>
         </main>
