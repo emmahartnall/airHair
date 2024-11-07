@@ -1,3 +1,9 @@
+
+aside {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -54,6 +60,8 @@ header {
 input {
     width: 40%;
     padding: 3%;
+    line-height: 1.5;
+    height: 1.5em;
 }
 
 nav {
@@ -68,6 +76,13 @@ label {
     width: 30%;
     margin-right: 3%;
     text-align: right;
+    height: 1.5em;
+}
+
+
+main {
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 select {

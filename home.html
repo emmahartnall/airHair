@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hair Compare</title>
         <link rel="icon" href="images/hairCompareicon.png"/>
-        <link rel="stylesheet" href="styles/style.css" />
         <link rel="stylesheet" href="styles/bookingCardStyle.css"/>
         <link rel="stylesheet" href="Styles/basicElements.css"/>
+        <link rel="stylesheet" href="styles/classes.css" />
+        <link rel="stylesheet" href="styles/ids.css" />"
     </head>
     <body>
         <header>
@@ -27,7 +28,7 @@
             <a href="myBookings.html" class="tab">Bookings</a>
             <a href="developmentTeam.html" class="tab">Contact</a>
         </nav>
-        <main>
+        <div class="gridLayout">
             <aside>
                 <div>
                     Appointment length: <span id="length-display">0 minutes</span>
@@ -56,13 +57,14 @@
                 <input type="checkbox" id="straightening"><label for="straightening">Straightening</label>
                 <input type="checkbox" id="products"><label for="products">Products</label>
             </aside>
-            <div class="formImitation">
-                <input type="date" id="datePicker" name="datePicker">
-                <button onclick="findAppointments()">Find appointments available</button>
-                <div id="tableContainer"></div>
-            </div>
-        </main>
-
+            <main>
+                <div class="formImitation">
+                    <input type="date" id="datePicker" name="datePicker">
+                    <button onclick="findAppointments()">Find appointments available</button>
+                    <div id="tableContainer"></div>
+                </div>
+            </main>
+        </div>
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
         </footer>

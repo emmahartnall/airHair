@@ -47,6 +47,23 @@
   overflow-x:auto;
 }
 
+.gridLayout{
+  display: grid;
+  grid-template-columns: 20% 80%; /* Aside takes 20%, main takes 80% */
+  gap: 10px; /* Optional: adds space between columns */
+  height: 100vh; /* Full height layout */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gridLayout {
+      grid-template-columns: 1fr; /* Stack aside and main vertically */
+  }
+  aside, main {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
