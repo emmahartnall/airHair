@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hair Compare</title>
         <link rel="icon" href="images/hairCompareicon.png"/>
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/classes.css" />
+        <link rel="stylesheet" href="styles/ids.css" />
         <link rel="stylesheet" href="Styles/basicElements.css"/>
     </head>
     <body>
@@ -30,60 +31,64 @@
 
         <div class="container">
             <form id="customerHairForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <div class="gridLayout">
+                    <div class="form-group-grid">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your address" required>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" >
-                    <option value="" disabled selected>Select your gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="nonbinary">Non-binary</option>
-                    <option value="other">Other</option>
-                    <option value="preferNotToSay">Prefer not to say</option>
-                </select>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" >
+                            <option value="" disabled selected>Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="nonbinary">Non-binary</option>
+                            <option value="other">Other</option>
+                            <option value="preferNotToSay">Prefer not to say</option>
+                        </select>
 
-                <label for="hair-type">Hair Type:</label>
-                <select id="hair-type" name="hair-type" >
-                    <option value="" disabled selected>Select your hair type</option>
-                    <option value="straight">Straight</option>
-                    <option value="wavy">Wavy</option>
-                    <option value="curly">Curly</option>
-                    <option value="coily">Coily</option>
-                </select>
+                        <label for="hair-type">Hair Type:</label>
+                        <select id="hair-type" name="hair-type" >
+                            <option value="" disabled selected>Select your hair type</option>
+                            <option value="straight">Straight</option>
+                            <option value="wavy">Wavy</option>
+                            <option value="curly">Curly</option>
+                            <option value="coily">Coily</option>
+                        </select>
 
-                <label for="hair-colour">Hair Colour:</label>
-                <select id="hair-colour" name="hair-colour" >
-                    <option value="" disabled selected>Select your hair colour</option>
-                    <option value="black">Black</option>
-                    <option value="brown">Brown</option>
-                    <option value="blonde">Blonde</option>
-                    <option value="red">Red</option>
-                    <option value="gray">Gray</option>
-                    <option value="other">Other</option>
-                </select>
+                        <label for="hair-colour">Hair Colour:</label>
+                        <select id="hair-colour" name="hair-colour" >
+                            <option value="" disabled selected>Select your hair colour</option>
+                            <option value="black">Black</option>
+                            <option value="brown">Brown</option>
+                            <option value="blonde">Blonde</option>
+                            <option value="red">Red</option>
+                            <option value="gray">Gray</option>
+                            <option value="other">Other</option>
+                        </select>
 
-                <label for="hair-length">Current Hair Length:</label>
-                <select id="hair-length" name="hair-length" >
-                    <option value="" disabled selected>Select your hair length</option>
-                    <option value="short">Short (Above shoulders)</option>
-                    <option value="medium">Medium (Shoulder length)</option>
-                    <option value="long">Long (Below shoulders)</option>
-                </select>
+                        <label for="hair-length">Current Hair Length:</label>
+                        <select id="hair-length" name="hair-length" >
+                            <option value="" disabled selected>Select your hair length</option>
+                            <option value="short">Short (Above shoulders)</option>
+                            <option value="medium">Medium (Shoulder length)</option>
+                            <option value="long">Long (Below shoulders)</option>
+                        </select>
 
-                <button type="submit">Get Inspiration for Your Hair</button>
+                        <button type="submit">Get Inspiration for Your Hair</button>
+                    </div>
+                </div>
             </form>
             <div class="image-display" id="imageDisplay">
             </div>
