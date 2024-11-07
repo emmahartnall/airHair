@@ -97,6 +97,12 @@
   margin-right: 5%;
 }
 
+.mainContent {
+  flex: 1; /* Takes up available space */
+  padding: .3em;
+}
+
+
 .preview {
   margin-bottom: 15px;
   text-align: center;
