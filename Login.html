@@ -9,20 +9,38 @@
         <link rel="stylesheet" href="Styles/basicElements.css"/>
     </head>
     <body>
-        <div class="login-container">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
+        <header>
+            <div class="container">
+                <div>
+                    <h1>Hair Compare - Prototype</h1>
+                    <h2>Customers - Find an appointment at a time that suits you.</h2>
+                    <h2>Hairdressers - Manage which services you offer and at which times.</h2>
                 </div>
-                <div class="input-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" required>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div id="errorMessage" class="error"></div>
-            </form>
+                <button onclick="checkIfLoggedIn()">Login</button>
+            </div>
+        </header>
+        <nav class="tabs">
+            <a href="home.html" class="tab active">Home Page</a>
+            <a href="registerHairDresser.html" class="tab">As Hairdresser</a>
+            <a href="userProfile.html" class="tab">About You</a>
+            <a href="myBookings.html" class="tab">Bookings</a>
+            <a href="developmentTeam.html" class="tab">Contact</a>
+        </nav>
+        <div class="container">
+            <div class="formImitation">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="userName">Username:</label>
+                        <input type="text" id="userName" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
         </div>
+        <footer>
+            <p>&copy; 2024 Hair Compare. All rights reserved.</p>
+        </footer>
+        <script src="Scripts/login.js"></script>
     </body>
 </html>
