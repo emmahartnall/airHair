@@ -7,6 +7,7 @@
         <link rel="icon" href="images/hairCompareicon.png"/>
         <link rel="stylesheet" href="styles/style.css" />
         <link rel="stylesheet" href="Styles/basicElements.css"/>
+        <link rel="stylesheet" href="Styles/regHairdresser.css"/>
     </head>
     <body>
         <header>
@@ -28,63 +29,63 @@
         </nav>
         
         <div class="container">
-            <form id="hairdresserForm">
-                <label>
-                    <input type="checkbox" name="services" value="Haircut">
-                    Would you like to register as a hairstylist?
-                </label><br>
+            <label>
+                <input type="checkbox" id="toggleCheckbox">
+                Would you like to register as a hairstylist?
+            </label>
+            <div id="toggleContent">
+                <form id="hairdresserForm">
+                    <label for="name">Name:</label>
+                    <input type="text" required>
 
-                <label for="name">Name:</label>
-                <input type="text" required>
+                    <label for="name">Location:</label>
+                    <input type="text"  required>
 
-                <label for="name">Location:</label>
-                <input type="text"  required>
+                    <label for="salon">Choose your salon:</label>
+                    <select id="salon" name="salon">
+                        <option value="" disabled selected>Select a salon</option>
+                        <option value="freelancers">Freelance</option>
+                        <option value="Salon A">Salon A</option>
+                        <option value="Salon B">Salon B</option>
+                    </select>
+                    <label for="years">Years of experience:</label>
+                    <input type="number" min="0" placeholder="Years" style="width: 60px;">
 
-                <label for="salon">Choose your salon:</label>
-                <select id="salon" name="salon">
-                    <option value="" disabled selected>Select a salon</option>
-                    <option value="freelancers">Freelance</option>
-                    <option value="Salon A">Salon A</option>
-                    <option value="Salon B">Salon B</option>
-                </select>
-                <label for="years">Years of experience:</label>
-                <input type="number" min="0" placeholder="Years" style="width: 60px;">
+                    <label for="qualifications">Qualifications:</label>
+                    <label>
+                        <input type="checkbox" name="qualifications" value="Certificate III in Hairdressing">
+                        Certificate III in Hairdressing (SHB30416)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="qualifications" value="Certificate IV in Hairdressing">
+                        Certificate IV in Hairdressing (SHB40116)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="qualifications" value="Diploma of Salon Management">
+                        Diploma of Hairdressing (SHB50116)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="qualifications" value="Barbering Certificate">
+                        Advanced Diploma of Hairdressing (SHB50216)
+                    </label>
+        
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="startTime">Start Time:</label>
+                    <input type="time" id="startTime" name="startTime" required>
+                    
+                    <label for="endTime">End Time:</label>
+                    <input type="time" id="endTime" name="endTime" required>
 
-                <label for="qualifications">Qualifications:</label>
-                <label>
-                    <input type="checkbox" name="qualifications" value="Certificate III in Hairdressing">
-                    Certificate III in Hairdressing (SHB30416)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="qualifications" value="Certificate IV in Hairdressing">
-                    Certificate IV in Hairdressing (SHB40116)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="qualifications" value="Diploma of Salon Management">
-                    Diploma of Hairdressing (SHB50116)
-                </label><br>
-                <label>
-                    <input type="checkbox" name="qualifications" value="Barbering Certificate">
-                    Advanced Diploma of Hairdressing (SHB50216)
-                </label><br>
-                
-            
-                <label for="date">Select Date:</label>
-                <input type="date" id="date" name="date" required>
-                
-                <label for="startTime">Start Time:</label>
-                <input type="time" id="startTime" name="startTime" required>
-                
-                <label for="endTime">End Time:</label>
-                <input type="time" id="endTime" name="endTime" required>
-    
-                <button type="submit">Submit</button>
-            </form>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
         </footer>
         <script src="Scripts/photoUpload.js"></script>
-        <script src="Scripts/map.js"></script>
+        <script src="Scripts/regHairdresser.js"></script>
     </body>
 </html>
