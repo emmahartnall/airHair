@@ -1,67 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking page</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="Styles/basicElements.css"/>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div>
-                <h1>Hair Compare - Prototype</h1>
-                <h2>Customers - Find an appointment at a time that suits you.</h2>
-                <h2>Hairdressers - Manage your services.</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking page</title>
+        <link rel="stylesheet" href="styles/classes.css" />
+        <link rel="stylesheet" href="styles/ids.css" />
+        <link rel="stylesheet" href="Styles/basicElements.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div>
+                    <h1>Hair Compare - Prototype</h1>
+                    <h2>Customers - Find an appointment at a time that suits you.</h2>
+                    <h2>Hairdressers - Manage your services.</h2>
+                </div>
+                <button onclick="checkIfLoggedIn()">Login</button>
             </div>
-            <button onclick="checkIfLoggedIn()">Login</button>
-        </div>
-    </header>
+        </header>
 
-    <nav class="tabs">
-        <a href="home.html" class="tab">Home Page</a>
-        <a href="registerHairDresser.html" class="tab">As Hairdresser</a>
-        <a href="userProfile.html" class="tab">About You</a>
-        <a href="myBookings.html" class="tab">Bookings</a>
-        <a href="developmentTeam.html" class="tab">Contact</a>
-    </nav>
+        <nav class="tabs">
+            <a href="home.html" class="tab">Home Page</a>
+            <a href="registerHairDresser.html" class="tab">As Hairdresser</a>
+            <a href="userProfile.html" class="tab">About You</a>
+            <a href="myBookings.html" class="tab">Bookings</a>
+            <a href="developmentTeam.html" class="tab">Contact</a>
+        </nav>
 
-    <div class="container">
-
-        <div class="booking-container">
+        <div class="topdiv">
             <form id="booking-form">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
-
-                <label for="time">Preferred Time:</label>
-                <input type="time" id="time" name="time" required>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
 
                 <button type="submit">Book Now</button>
             </form>
         </div>
 
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Hair Compare. All rights reserved.</p>
-    </footer>
-
-
-<script>
-    document.getElementById('booking-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Your appointment has been booked!');
-        // You can add backend integration here, like sending form data to a server
-    });
-</script>
-<script src="Scripts/login.js"></script>
-
-</body>
+        <footer>
+            <p>&copy; 2024 Hair Compare. All rights reserved.</p>
+        </footer>
+        <script>
+            document.getElementById('booking-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Your appointment has been booked!');
+                // You can add backend integration here, like sending form data to a server
+            });
+        </script>
+        <script src="Scripts/login.js"></script>
+    </body>
 </html>

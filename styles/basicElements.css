@@ -26,7 +26,7 @@ button:hover {
 }
 
 form {
-    width: 100%;
+    width: 70%;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -51,24 +51,9 @@ header {
     justify-content: space-between;
 }
 
-main {
-display: flex;
-flex: 1;
-}
-
-/* Positioning profile in the top-right */
-header .profile {
-    margin-left: auto;
-}
-
-input[type="text"], input[type="file"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+input {
+    width: 40%;
+    padding: 3%;
 }
 
 nav {
@@ -80,11 +65,11 @@ nav {
 }
 
 label {
-    margin-left: 10px;
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    width: 30%;
+    margin-right: 3%;
+    text-align: right;
 }
+
 select {
     width: 100%;
     padding: 10px;
@@ -108,14 +93,4 @@ th {
 }
 tr:nth-child(even) {
     background-color: #f9f9f9;
-}
-
-input[type="text"], input[type="file"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
 }

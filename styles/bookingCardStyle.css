@@ -11,16 +11,12 @@
     color: #555;
 }
 
-
-
 /* Styling for distance */
 .distance {
     margin-top: 10px;
     font-size: 14px;
     color: #3498db;
 }
-
-
 
 /* Styling for price section */
 .price {
@@ -29,20 +25,20 @@
     color: #27ae60;
 }
 
-
 .status-confirmed {
     color: green;
     font-weight: bold;
 }
+
 .status-pending {
     color: orange;
     font-weight: bold;
 }
+
 .status-cancelled {
     color: red;
     font-weight: bold;
 }
-
 
 /* Styling for each time slot */
 .time-slot {
