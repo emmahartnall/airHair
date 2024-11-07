@@ -73,12 +73,8 @@ nav {
 }
 
 label {
-    width: 30%;
-    margin-right: 3%;
-    text-align: right;
-    height: 1.5em;
+    text-align: right; 
 }
-
 
 main {
     padding: 10px;
@@ -98,14 +94,17 @@ table {
     border-collapse: collapse;
     margin-top: 10px;
 }
+
 th, td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
 }
+
 th {
     background-color: #f4f4f4;
 }
+
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }

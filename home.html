@@ -30,10 +30,9 @@
         </nav>
         <div class="gridLayout">
             <aside>
-                <div>
-                    Appointment length: <span id="length-display">0 minutes</span>
-                    Please select below services to update extimate.
-                </div>
+                <b>
+                    Please select services below to determine price and appointment length.
+                </b>
                 <select id="style" >
                     <option value="" disabled selected>Select Style</option>
                     <option value="Bob">Bob</option>
@@ -41,21 +40,49 @@
                     <option value="short back and sides">Short back and sides</option>
                     <option value="layers">long layers</option>
                 </select>
+                <div class="form-group-grid">
+                    <label for="hair-wash">Wash</label>
+                    <input type="checkbox" id="hair-wash" >
+                
+                    <label for="styling">Styling</label>
+                    <input type="checkbox" id="styling" >
+                
+                    <label for="cut">Cut</label>
+                    <input type="checkbox" id="cut" >
+               
+                    <label for="dry">Blow Dry</label>
+                    <input type="checkbox" id="dry" >
+                
+                    <label for="drive">Drive to your home</label>
+                    <input type="checkbox" id="drive" >
+                
+                    <label for="advice">Advice</label>
+                    <input type="checkbox" id="advice" >
+                
+                    <label for="massage">Scalp Massage</label>
+                    <input type="checkbox" id="massage" >
+                
+                    <label for="chair">Heated Chair</label>
+                    <input type="checkbox" id="chair" >
+                
+                    <label for="drink">Beverage</label>
+                    <input type="checkbox" id="drink">
+                
+                    <label for="treatment">Treatment</label>
+                    <input type="checkbox" id="treatment">
 
-                <input type="checkbox" id="hair-wash" ><label for="hair-wash">Wash</label>
-                <input type="checkbox" id="cut"><label for="cut">Cut</label>
-                <input type="checkbox" id="dry"><label for="dry">Dry</label>
-                <input type="checkbox" id="drive"><label for="drive">Drive to your Home</label>
-                <input type="checkbox" id="advice"><label for="advice">Styling Advice</label>
-                <input type="checkbox" id="massage"><label for="massage">Scalp Massage</label>
-                <input type="checkbox" id="chair" ><label for="chair">Heated Chair</label>
-                <input type="checkbox" id="drink" ><label for="drink">Beverage</label>
-                <input type="checkbox" id="treatment" ><label for="treatment">Treatment</label>
-                <input type="checkbox" id="coloring"><label for="coloring">Colour</label>
-                <input type="checkbox" id="highlights"><label for="highlights">Highlights</label>
-                <input type="checkbox" id="perm"><label for="perm">Perm</label>
-                <input type="checkbox" id="straightening"><label for="straightening">Straightening</label>
-                <input type="checkbox" id="products"><label for="products">Products</label>
+                    <label for="coloring">Colour</label>
+                    <input type="checkbox" id="coloring">
+
+                    <label for="highlights">Highlights</label>
+                    <input type="checkbox" id="highlights">
+
+                    <label for="perm">Perm</label>
+                    <input type="checkbox" id="perm">
+
+                    <label for="straightening">Straightening</label>
+                    <input type="checkbox" id="products">
+                </div>
             </aside>
             <main>
                 <div class="formImitation">
