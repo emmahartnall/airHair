@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hair Compare</title>
         <link rel="icon" href="images/hairCompareicon.png"/>
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/classes.css" />
+        <link rel="stylesheet" href="styles/ids.css" />
         <link rel="stylesheet" href="Styles/basicElements.css"/>
         <link rel="stylesheet" href="Styles/regHairdresser.css"/>
     </head>
@@ -28,58 +29,64 @@
             <a href="myBookings.html" class="tab">Bookings</a>
             <a href="developmentTeam.html" class="tab">Contact</a>
         </nav>
-        
-        <div class="formImitation">
+        <div class="maincontent">
             <label>
                 <input type="checkbox" id="toggleCheckbox">
                 Would you like to register as a hairstylist?
             </label>
             <div id="toggleContent">
                 <form id="hairdresserForm">
-                    <label for="name">Name:</label>
-                    <input type="text" required>
+                    <div class="gridLayout">
+                        <div class="form-group-grid">
+                            <label for="name">Name:</label>
+                            <input type="text" required>
 
-                    <label for="name">Location:</label>
-                    <input type="text"  required>
+                            <label for="name">Location:</label>
+                            <input type="text"  required>
 
-                    <label for="salon">Choose your salon:</label>
-                    <select id="salon" name="salon">
-                        <option value="" disabled selected>Select a salon</option>
-                        <option value="freelancers">Freelance</option>
-                        <option value="Salon A">Salon A</option>
-                        <option value="Salon B">Salon B</option>
-                    </select>
-                    <label for="years">Years of experience:</label>
-                    <input type="number" min="0" placeholder="Years" style="width: 60px;">
+                            <label for="salon">Choose your salon:</label>
+                            <select id="salon" name="salon">
+                                <option value="" disabled selected>Select a salon</option>
+                                <option value="freelancers">Freelance</option>
+                                <option value="Salon A">Salon A</option>
+                                <option value="Salon B">Salon B</option>
+                            </select>
+                            <label for="years">Years of experience:</label>
+                            <input type="number" min="0" placeholder="Years" style="width: 60px;">
+                        </div>
+                    </div>
+                    <b><label for="qualifications">Qualifications:</label></b>
+                    <div class="gridLayout">
+                        <div class="form-group-grid">
+                            <label>
+                                <input type="checkbox" name="qualifications" value="Certificate III in Hairdressing">
+                                Certificate III in Hairdressing (SHB30416)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="qualifications" value="Certificate IV in Hairdressing">
+                                Certificate IV in Hairdressing (SHB40116)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="qualifications" value="Diploma of Salon Management">
+                                Diploma of Hairdressing (SHB50116)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="qualifications" value="Barbering Certificate">
+                                Advanced Diploma of Hairdressing (SHB50216)
+                            </label>
+                
+                            <label for="date">Select Date:</label>
+                            <input type="date" id="date" name="date" required>
+                            
+                            <label for="startTime">Start Time:</label>
+                            <input type="time" id="startTime" name="startTime" required>
+                            
+                            <label for="endTime">End Time:</label>
+                            <input type="time" id="endTime" name="endTime" required>
 
-                    <label for="qualifications">Qualifications:</label>
-                    <label>
-                        <input type="checkbox" name="qualifications" value="Certificate III in Hairdressing">
-                        Certificate III in Hairdressing (SHB30416)
-                    </label>
-                    <label>
-                        <input type="checkbox" name="qualifications" value="Certificate IV in Hairdressing">
-                        Certificate IV in Hairdressing (SHB40116)
-                    </label>
-                    <label>
-                        <input type="checkbox" name="qualifications" value="Diploma of Salon Management">
-                        Diploma of Hairdressing (SHB50116)
-                    </label>
-                    <label>
-                        <input type="checkbox" name="qualifications" value="Barbering Certificate">
-                        Advanced Diploma of Hairdressing (SHB50216)
-                    </label>
-        
-                    <label for="date">Select Date:</label>
-                    <input type="date" id="date" name="date" required>
-                    
-                    <label for="startTime">Start Time:</label>
-                    <input type="time" id="startTime" name="startTime" required>
-                    
-                    <label for="endTime">End Time:</label>
-                    <input type="time" id="endTime" name="endTime" required>
-
-                    <button type="submit">Submit</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
