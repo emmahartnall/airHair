@@ -1,5 +1,17 @@
-// Set data
-sessionStorage.setItem("loggedIn", "false");
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const loginButton = document.getElementById('loginButton');
+    const loggedIn = sessionStorage.getItem("loggedIn");
+    //alert("session value of loggodIn: " + loggedIn)
+    
+    if (loggedIn === "true"){
+        //alert("logged in");
+        loginButton.style.display = 'none';
+    } else {
+        //alert("not logged in");
+        loginButton.style.display = 'block';
+    }
+});
 
 function checkIfLoggedIn(){
     const loggedIn = sessionStorage.getItem("loggedIn");
