@@ -64,6 +64,10 @@
   height: 100vh; /* Full height layout */
 }
 
+.gridLayoutOneColumn{
+  display: grid;
+  grid-auto-rows: auto;;
+}
 
 .header-container {
   display: flex;
@@ -93,7 +97,6 @@
   flex: 1; /* Takes up available space */
   padding: .3em;
 }
-
 
 .preview {
   margin-bottom: 15px;

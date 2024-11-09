@@ -2,9 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const loginButton = document.getElementById('loginButton');
     const loggedIn = sessionStorage.getItem("loggedIn");
+    const displayUsername = document.getElementById("displayUsername");
     //alert("session value of loggodIn: " + loggedIn)
     
     if (loggedIn === "true"){
+        const username = sessionStorage.getItem("username");
+        if(displayUsername){
+            displayUsername.textContent = username;
+        }
         //alert("logged in");
         loginButton.style.display = 'none';
     } else {
