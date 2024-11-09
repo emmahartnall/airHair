@@ -38,15 +38,6 @@
   margin-bottom: 3%;
 }
 
-/* Container for each label-checkbox pair */
-.form-group-grid {
-  display: grid;
-  grid-template-columns: auto 1fr; /* Two columns: label and checkbox */
-  align-items: center;
-  gap: .5em; /* Space between label and checkbox */
-  margin-bottom: .5em; /* Space between form groups */
-}
-
 .formImitation {
   margin: auto;
   padding: 20px;

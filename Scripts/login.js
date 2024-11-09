@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     const loginButton = document.getElementById('loginButton');
+    const logoutButton = document.getElementById('logoutButton');
     const loggedIn = sessionStorage.getItem("loggedIn");
     const displayUsername = document.getElementById("displayUsername");
     //alert("session value of loggodIn: " + loggedIn)
@@ -12,9 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         //alert("logged in");
         loginButton.style.display = 'none';
+        logoutButton.style.display = 'block';
     } else {
         //alert("not logged in");
         loginButton.style.display = 'block';
+        logoutButton.style.display = 'none';
     }
 });
 
