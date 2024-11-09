@@ -18,22 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function checkIfLoggedIn(){
-    const loggedIn = sessionStorage.getItem("loggedIn");
-    if (loggedIn === "false"){
-        window.location.href = "Login.html"; 
-    }
-}
-
-function getUserName(){
-    const username = sessionStorage.getItem("username");
-    if(username){
-        return username;
-    } else {
-        return null;
-    }
-}
-
 function login(){
     usernameElement = document.getElementById("userName");
     passwordElement = document.getElementById("password");
@@ -53,8 +37,11 @@ function login(){
 
 function logout(){
     sessionStorage.setItem("loggedIn", "false");
+    sessionStorage.setItem("username", "");
+    sessionStorage.setItem("password", "");
+    alert("Logout successful");
 
-    window.location.href = "index.html";
+    window.location.href = "./home.html";
 }
 
 // Storing an object
