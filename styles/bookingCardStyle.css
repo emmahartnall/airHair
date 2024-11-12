@@ -11,6 +11,13 @@
     color: #555;
 }
 
+.complex-div{
+    display: 'flex';
+    border:'1px solid #ccc';
+    padding: '20px';
+    margin:'10px';
+}
+
 /* Styling for distance */
 .distance {
     margin-top: 10px;
