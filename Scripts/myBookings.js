@@ -1,9 +1,9 @@
   document.addEventListener('DOMContentLoaded', function() {
-    customerBookings();  
+    myBookings();  
   });
   
-  function customerBookings(){
-    const tableContainer = document.getElementById('custBookingTable');
+  function myBookings(){
+    const tableContainer = document.getElementById('myBookings');
     
     // Clear any existing table
     tableContainer.innerHTML = '';
@@ -11,32 +11,26 @@
     const formImitation = document.createElement('div');
     formImitation.className = 'formImitation';
     tableContainer.appendChild(formImitation);
-   // alert('Create table');  
     const tableHeader = document.createElement('h1');
-    tableHeader.textContent = 'Customer Bookings';
+    tableHeader.textContent = 'My Bookings';
     tableHeader.className = 'table-header';
     formImitation.appendChild(tableHeader);
     
     const table = document.createElement('table');
     table.className = 'booking-table';
     
-    // Create the table body
-   // alert('Create table body');
     const tbody = table.createTBody();
 
     for (let i = 0; i < 2; i++) {
-      createRowContent(tbody);
+      myBookingRow(tbody);
     }
-   // alert("end of create table");
 
     formImitation.appendChild(table);
   }
 
-  function createRowContent(tbody){
-    //alert('Create Row function');
+  function myBookingRow(tbody){
     const row = tbody.insertRow();
 
-    // Create the main container div
     const mainDiv = document.createElement('div');
     mainDiv.classList.add('complex-div');  // Add a class for styling
     mainDiv.style.display = 'flex';
@@ -46,31 +40,25 @@
     mainDiv.style.margin = '10px';
     mainDiv.style.backgroundColor = '#f9f9f9';
 
-    const headerDiv = document.createElement('div');
-    headerDiv.classList.add('header-div');
-    headerDiv.style.display = 'flex';
-    headerDiv.style.justifyContent = 'space-between';
-    headerDiv.style.alignItems = 'center';
-
-    const title = document.createElement('span');
-    title.textContent = 'Customer Name';
-    title.style.fontSize = '20px';
-    title.style.fontWeight = 'bold';
-    headerDiv.appendChild(title);
-    mainDiv.appendChild(headerDiv);
-  //  alert('after hairdresser name');
-
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('content-div');
     contentDiv.style.marginTop = '10px';
 
-    const dateDiv = document.createElement('div');
-    dateDiv.textContent = '2024-11-20';
-    contentDiv.appendChild(dateDiv);
+    const timeAndDateDiv = document.createElement('div');
+    timeAndDateDiv.textContent = '9:00 AM 2024-11-20';
+    contentDiv.appendChild(timeAndDateDiv);
 
-    const timeDiv = document.createElement('div');
-    timeDiv.textContent = '9:00 AM';
-    contentDiv.appendChild(timeDiv);
+    const hairDresser = document.createElement('div');
+    hairDresser.textContent = 'Hairdresser: Hairdresser Name';
+    contentDiv.appendChild(hairDresser);
+
+    const salon = document.createElement('div');
+    salon.textContent = 'Salon: Salon Name';
+    contentDiv.appendChild(salon);
+
+    const locationDiv = document.createElement('div');
+    locationDiv.textContent = 'Latitude, Longitude: 37°4629.64N, 122°259.84W';
+    contentDiv.appendChild(locationDiv);
 
     const services = document.createElement('div');
     services.textContent = 'Services selected: Haircut, Shampoo';
@@ -85,19 +73,15 @@
     appointmentLengthDiv.textContent = 'Appointment Length: 1 hour';
     contentDiv.appendChild(appointmentLengthDiv);
 
-    // Add a button to the content div
-    const button = document.createElement('button');
-    button.textContent = 'Confirm';
-
-    // Append the button to the content div
-    contentDiv.appendChild(button);
+    const appointmentStatusDiv = document.createElement('div');
+    appointmentStatusDiv.textContent = 'Booking status: requested';
+    contentDiv.appendChild(appointmentStatusDiv);
 
     // Append the content div to the main container
     mainDiv.appendChild(contentDiv);
 
     // Finally, append the main div to the row
     row.appendChild(mainDiv);
-  //  alert('end of loop');
   }
   
 
