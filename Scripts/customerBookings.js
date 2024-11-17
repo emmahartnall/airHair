@@ -11,19 +11,23 @@
     const formImitation = document.createElement('div');
     formImitation.className = 'formImitation';
     tableContainer.appendChild(formImitation);
-    alert('Create table');
+   // alert('Create table');  
+    const tableHeader = document.createElement('h1');
+    tableHeader.textContent = 'Customer Bookings';
+    tableHeader.className = 'table-header';
+    formImitation.appendChild(tableHeader);
     
     const table = document.createElement('table');
     table.className = 'booking-table';
     
     // Create the table body
-    alert('Create table body');
+   // alert('Create table body');
     const tbody = table.createTBody();
 
     for (let i = 0; i < 2; i++) {
       createRowContent(tbody);
     }
-    alert("end of create table");
+   // alert("end of create table");
 
     formImitation.appendChild(table);
   }
@@ -55,47 +59,32 @@
     title.style.fontWeight = 'bold';
     headerDiv.appendChild(title);
     mainDiv.appendChild(headerDiv);
-    alert('after hairdresser name');
+  //  alert('after hairdresser name');
 
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('content-div');
     contentDiv.style.marginTop = '10px';
 
-    const appointmentLengthDiv = document.createElement('div');
-    appointmentLengthDiv.textContent = 'Appointment Length: 1 hour';
-    contentDiv.appendChild(appointmentLengthDiv);
-    alert('after appointment length');
+    const dateDiv = document.createElement('div');
+    dateDiv.textContent = '2024-11-20';
+    contentDiv.appendChild(dateDiv);
 
-    const numBookDiv = document.createElement('div');
-    numBookDiv.classList.add('Booking');
-    numBookDiv.textContent = '45 bookings';
-    contentDiv.appendChild(numBookDiv);
-
-    const distanceDiv = document.createElement('div');
-    distanceDiv.classList.add('distance');
-    distanceDiv.textContent = 'Distance from you (meters): 250';
-    contentDiv.appendChild(distanceDiv);
-
-    const timesDiv = document.createElement('div');
-    timesDiv.classList.add('available-times');
-    contentDiv.appendChild(timesDiv);
-
-    const timeSlotDiv = document.createElement('div');
-    timeSlotDiv.classList.add('time-slot');
-    timeSlotDiv.textContent = '9:00 AM';
-    timesDiv.appendChild(timeSlotDiv);
+    const timeDiv = document.createElement('div');
+    timeDiv.textContent = '9:00 AM';
+    contentDiv.appendChild(timeDiv);
 
     const priceDiv = document.createElement('div');
     priceDiv.classList.add('price');
     priceDiv.textContent = 'Price: $25';
     contentDiv.appendChild(priceDiv);
 
+    const appointmentLengthDiv = document.createElement('div');
+    appointmentLengthDiv.textContent = 'Appointment Length: 1 hour';
+    contentDiv.appendChild(appointmentLengthDiv);
+
     // Add a button to the content div
     const button = document.createElement('button');
-    button.textContent = 'Book Appointment';
-    button.onclick = function(){
-      window.location.href = 'bookAppointment.html';
-    };
+    button.textContent = 'Confirm';
 
     // Append the button to the content div
     contentDiv.appendChild(button);
@@ -105,7 +94,7 @@
 
     // Finally, append the main div to the row
     row.appendChild(mainDiv);
-    alert('end of loop');
+  //  alert('end of loop');
   }
   
 

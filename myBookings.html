@@ -32,9 +32,11 @@
         <a href="myBookings.html" class="tab active">Bookings</a>
         <a href="developmentTeam.html" class="tab">Contact</a>
     </nav>
-    
-    <h2>Customer Bookings</h2>
+
+    <div id="yourBookingTable"></div>
     <div id="custBookingTable"></div>
+    <div id="historicalBookingTable"></div>
+
 
     <div class="formImitation">
         <div class="header-container">
@@ -44,11 +46,10 @@
         <table>
             <thead>
                 <tr>
-                    <th>Select</th>
                     <th>Customer Name</th>
-                    <th>Length</th>
+                    <th>Appointment Length</th>
                     <th>Price</th>
-                    <th>Hair style</th>
+                    <th>services Selected</th>
                     <th>Date</th>
                     <th>Time</th>
                     <th>Status</th>
@@ -56,7 +57,6 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="checkbox"></td>
                     <td>John Doe</td>
                     <td>45 minutes</td>
                     <td>$40</td>
@@ -66,7 +66,6 @@
                     <td class="status-confirmed">Confirmed</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
                     <td>Jane Smith</td>
                     <td>120 minutes</td>
                     <td>$100</td>
