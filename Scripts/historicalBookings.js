@@ -1,6 +1,6 @@
   document.addEventListener('DOMContentLoaded', function() {
+    //alert("historical bookings");
     historicalBookings();  
-    alert("on load");
   });
   
   function historicalBookings(){
@@ -8,12 +8,12 @@
     
     // Clear any existing table
     tableContainer.innerHTML = '';
-
+    alert("historical bookings");
     const formImitation = document.createElement('div');
     formImitation.className = 'formImitation';
     tableContainer.appendChild(formImitation);
     const tableHeader = document.createElement('h1');
-    tableHeader.textContent = 'My past bookings';
+    tableHeader.textContent = 'Previous Hair appointments';
     tableHeader.className = 'table-header';
     formImitation.appendChild(tableHeader);
     
@@ -34,7 +34,7 @@
     alert("historical booking row");
 
     const mainDiv = document.createElement('div');
-    mainDiv.classList.add('complex-div');  // Add a class for styling
+    mainDiv.classList.add('complex-div');  
     mainDiv.style.display = 'flex';
     mainDiv.style.flexDirection = 'column';
     mainDiv.style.border = '1px solid #ccc';
@@ -46,38 +46,25 @@
     contentDiv.classList.add('content-div');
     contentDiv.style.marginTop = '10px';
 
-    const timeAndDateDiv = document.createElement('div');
-    timeAndDateDiv.textContent = '9:00 AM 2024-11-20';
-    contentDiv.appendChild(timeAndDateDiv);
-
     const hairDresser = document.createElement('div');
     hairDresser.textContent = 'Hairdresser: Hairdresser Name';
     contentDiv.appendChild(hairDresser);
 
-    const salon = document.createElement('div');
-    salon.textContent = 'Salon: Salon Name';
-    contentDiv.appendChild(salon);
-
-    const locationDiv = document.createElement('div');
-    locationDiv.textContent = 'Latitude, Longitude: 37°4629.64N, 122°259.84W';
-    contentDiv.appendChild(locationDiv);
+    const DateDiv = document.createElement('div');
+    DateDiv.textContent = '2024-11-20';
+    contentDiv.appendChild(DateDiv);
 
     const services = document.createElement('div');
     services.textContent = 'Services selected: Haircut, Shampoo';
     contentDiv.appendChild(services);
 
-    const priceDiv = document.createElement('div');
-    priceDiv.classList.add('price');
-    priceDiv.textContent = 'Price: $25';
-    contentDiv.appendChild(priceDiv);
+    const comments = document.createElement('div');
+    comments.textContent = 'Great hair cut';
+    contentDiv.appendChild(comments);
 
-    const appointmentLengthDiv = document.createElement('div');
-    appointmentLengthDiv.textContent = 'Appointment Length: 1 hour';
-    contentDiv.appendChild(appointmentLengthDiv);
-
-    const appointmentStatusDiv = document.createElement('div');
-    appointmentStatusDiv.textContent = 'Booking status: requested';
-    contentDiv.appendChild(appointmentStatusDiv);
+    const photo = document.createElement('div');
+    photo.textContent = 'photo';
+    contentDiv.appendChild(photo);
 
     // Append the content div to the main container
     mainDiv.appendChild(contentDiv);
