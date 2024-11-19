@@ -8,7 +8,7 @@
     
     // Clear any existing table
     tableContainer.innerHTML = '';
-    alert("historical bookings");
+  //  alert("historical bookings");
     const formImitation = document.createElement('div');
     formImitation.className = 'formImitation';
     tableContainer.appendChild(formImitation);
@@ -31,7 +31,7 @@
 
   function historicalBookingRow(tbody){
     const row = tbody.insertRow();
-    alert("historical booking row");
+   // alert("historical booking row");
 
     const mainDiv = document.createElement('div');
     mainDiv.classList.add('complex-div');  

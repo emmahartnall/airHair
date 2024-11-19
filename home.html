@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="Styles/basicElements.css"/>
         <link rel="stylesheet" href="styles/classes.css" />
         <link rel="stylesheet" href="styles/ids.css" />"
+        <link rel="stylesheet" href="Styles/layout.css"/>
     </head>
     <body>
         <header>
@@ -39,70 +40,70 @@
             <a href="developmentTeam.html" class="tab">Contact</a>
         </nav>
         <div class="maincontent">
-        <div class="gridLayout">
-            <aside>
-                <b>
-                    Please select services below to determine price and appointment length.
-                </b>
-                <select id="style" >
-                    <option value="" disabled selected>Select Style</option>
-                    <option value="Bob">Bob</option>
-                    <option value="crew cut">Crew cut</option>
-                    <option value="short back and sides">Short back and sides</option>
-                    <option value="layers">long layers</option>
-                </select>
-                <div class="gridLayout">
-                    <input type="checkbox" id="hair-wash" >
-                    <label for="hair-wash">Wash</label>
-                    
-                    <input type="checkbox" id="styling" >
-                    <label for="styling">Styling</label>
-                    
-                    <input type="checkbox" id="cut" >
-                    <label for="cut">Cut</label>
-                    
-                    <input type="checkbox" id="dry" >
-                    <label for="dry">Blow Dry</label>
-                    
-                    <input type="checkbox" id="drive" >
-                    <label for="drive">Drive to your home</label>
-                    
-                    <input type="checkbox" id="advice" >
-                    <label for="advice">Advice</label>
-                    
-                    <input type="checkbox" id="massage" >
-                    <label for="massage">Scalp Massage</label>
-                    
-                    <input type="checkbox" id="chair" >
-                    <label for="chair">Heated Chair</label>
-                    
-                    <input type="checkbox" id="drink">
-                    <label for="drink">Beverage</label>
-                    
-                    <input type="checkbox" id="treatment">
-                    <label for="treatment">Treatment</label>
-                    
-                    <input type="checkbox" id="coloring">
-                    <label for="coloring">Colour</label>
-                    
-                    <input type="checkbox" id="highlights">
-                    <label for="highlights">Highlights</label>
-                    
-                    <input type="checkbox" id="perm">
-                    <label for="perm">Perm</label>
-                    
-                    <input type="checkbox" id="products">
-                    <label for="straightening">Straightening</label>
-                </div>
-            </aside>
-            <main>
-                <div class="formImitation">
-                    <input type="date" id="datePicker" name="datePicker">
-                    <button onclick="findAppointments()">Find appointments available</button>
-                    <div id="tableContainer"></div>
-                </div>
-            </main>
-        </div>
+            <div class="gridLayout">
+                <aside>
+                    <b>
+                        Please select services below to determine price and appointment length.
+                    </b>
+                    <select id="style" >
+                        <option value="" disabled selected>Select Style</option>
+                        <option value="Bob">Bob</option>
+                        <option value="crew cut">Crew cut</option>
+                        <option value="short back and sides">Short back and sides</option>
+                        <option value="layers">long layers</option>
+                    </select>
+                    <div class="gridLayout">
+                        <input type="checkbox" id="hair-wash" >
+                        <label for="hair-wash">Wash</label>
+                        
+                        <input type="checkbox" id="styling" >
+                        <label for="styling">Styling</label>
+                        
+                        <input type="checkbox" id="cut" >
+                        <label for="cut">Cut</label>
+                        
+                        <input type="checkbox" id="dry" >
+                        <label for="dry">Blow Dry</label>
+                        
+                        <input type="checkbox" id="drive" >
+                        <label for="drive">Drive to your home</label>
+                        
+                        <input type="checkbox" id="advice" >
+                        <label for="advice">Advice</label>
+                        
+                        <input type="checkbox" id="massage" >
+                        <label for="massage">Scalp Massage</label>
+                        
+                        <input type="checkbox" id="chair" >
+                        <label for="chair">Heated Chair</label>
+                        
+                        <input type="checkbox" id="drink">
+                        <label for="drink">Beverage</label>
+                        
+                        <input type="checkbox" id="treatment">
+                        <label for="treatment">Treatment</label>
+                        
+                        <input type="checkbox" id="coloring">
+                        <label for="coloring">Colour</label>
+                        
+                        <input type="checkbox" id="highlights">
+                        <label for="highlights">Highlights</label>
+                        
+                        <input type="checkbox" id="perm">
+                        <label for="perm">Perm</label>
+                        
+                        <input type="checkbox" id="products">
+                        <label for="straightening">Straightening</label>
+                    </div>
+                </aside>
+                <main>
+                    <div class="formImitation">
+                        <input type="date" id="datePicker" name="datePicker">
+                        <button onclick="findAppointments()">Find appointments available</button>
+                        <div id="tableContainer"></div>
+                    </div>
+                </main>
+            </div>
         </div>
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>

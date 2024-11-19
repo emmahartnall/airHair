@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/classes.css" />
         <link rel="stylesheet" href="styles/ids.css" />
         <link rel="stylesheet" href="Styles/basicElements.css"/>
+        <link rel="stylesheet" href="Styles/layouts.css"/>
     </head>
     <body>
         <header>
@@ -33,73 +34,120 @@
             <a href="developmentTeam.html" class="tab">Contact</a>
         </nav>
 
-        <div class="container">
-            <form id="customerHairForm">
-                <div class="gridLayout">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <div class="gridInput">
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name"  placeholder="first name" required>
 
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            <label for="last_name">last name:</label>
+            <input type="text" id="last_name"  placeholder="last name" required
 
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" >
 
-                    <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob" required>
+            <label for="hairdresserCheckBox">Would you like to provide hair services?</label>
+            <input type="checkbox" id="hairdresserCheckBox">
+        </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div id="hairdresserFields" class="gridInput" sytle="display: none;"> 
+            <div class="gridInput">    
 
-                    <label for="gender">Gender:</label>
-                    <select id="gender" name="gender" >
-                        <option value="" disabled selected>Select your gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="nonbinary">Non-binary</option>
-                        <option value="other">Other</option>
-                        <option value="preferNotToSay">Prefer not to say</option>
-                    </select>
+                <label for="name">Location:</label>
+                <input type="text"  required>
 
-                    <label for="hair-type">Hair Type:</label>
-                    <select id="hair-type" name="hair-type" >
-                        <option value="" disabled selected>Select your hair type</option>
-                        <option value="straight">Straight</option>
-                        <option value="wavy">Wavy</option>
-                        <option value="curly">Curly</option>
-                        <option value="coily">Coily</option>
-                    </select>
+                <label for="hairdresserCheckBox">Do you work as part of a salon</label>
+                <input type="checkbox" id="hairdresserCheckBox">
 
-                    <label for="hair-colour">Hair Colour:</label>
-                    <select id="hair-colour" name="hair-colour" >
-                        <option value="" disabled selected>Select your hair colour</option>
-                        <option value="black">Black</option>
-                        <option value="brown">Brown</option>
-                        <option value="blonde">Blonde</option>
-                        <option value="red">Red</option>
-                        <option value="gray">Gray</option>
-                        <option value="other">Other</option>
-                    </select>
+                <label for="salon">Choose your salon:</label>
+                <select id="salon" name="salon">
+                    <option value="" disabled selected>Select a salon</option>
+                    <option value="freelancers">Freelance</option>
+                    <option value="Salon A">Salon A</option>
+                    <option value="Salon B">Salon B</option>
+                </select>
 
-                    <label for="hair-length">Current Hair Length:</label>
-                    <select id="hair-length" name="hair-length" >
-                        <option value="" disabled selected>Select your hair length</option>
-                        <option value="short">Short (Above shoulders)</option>
-                        <option value="medium">Medium (Shoulder length)</option>
-                        <option value="long">Long (Below shoulders)</option>
-                    </select>
-
-                    <button type="submit">Get Inspiration for Your Hair</button>
-                </div>
-            </form>
-            <div class="image-display" id="imageDisplay">
+                <label for="years">Years of experience:</label>
+                <input type="number" min="0" placeholder="Years" style="width: 60px;">
             </div>
+            <h3>Qualifications</h3>
+
+            <div class="gridInput">
+                <label> Certificate III in Hairdressing (SHB30416)</label>
+                <input type="checkbox" name="qualifications" value="Certificate III in Hairdressing">
+                
+                <label>Certificate IV in Hairdressing (SHB40116)</label>
+                <input type="checkbox" name="qualifications" value="Certificate IV in Hairdressing">
+                    
+                <label>Diploma of Hairdressing (SHB50116)</label>
+                <input type="checkbox" name="qualifications" value="Diploma of Salon Management">
+                
+                <label>Advanced Diploma of Hairdressing (SHB50216)</label>
+                <input type="checkbox" name="qualifications" value="Barbering Certificate">
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="startTime">Start Time:</label>
+                <input type="time" id="startTime" name="startTime" required>
+                
+                <label for="endTime">End Time:</label>
+                <input type="time" id="endTime" name="endTime" required>
+            </div>
+        </div>
+
+        <div class="gridInput">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" >
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" >
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" >
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="nonbinary">Non-binary</option>
+                <option value="other">Other</option>
+                <option value="preferNotToSay">Prefer not to say</option>
+            </select>
+
+            <label for="hair-type">Hair Type:</label>
+            <select id="hair-type" name="hair-type" >
+                <option value="" disabled selected>Select your hair type</option>
+                <option value="straight">Straight</option>
+                <option value="wavy">Wavy</option>
+                <option value="curly">Curly</option>
+                <option value="coily">Coily</option>
+            </select>
+
+            <label for="hair-colour">Hair Colour:</label>
+            <select id="hair-colour" name="hair-colour" >
+                <option value="" disabled selected>Select your hair colour</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="blonde">Blonde</option>
+                <option value="red">Red</option>
+                <option value="gray">Gray</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="hair-length">Current Hair Length:</label>
+            <select id="hair-length" name="hair-length" >
+                <option value="" disabled selected>Select your hair length</option>
+                <option value="short">Short (Above shoulders)</option>
+                <option value="medium">Medium (Shoulder length)</option>
+                <option value="long">Long (Below shoulders)</option>
+            </select>  
         </div>
 
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
         </footer>
-        <script src="Scripts/suggestHair.js"></script>
+        <script src="Scripts/regHairdresser.js"></script>
         <script src="Scripts/script.js"></script>
         <script src="Scripts/login.js"></script>
     </body>

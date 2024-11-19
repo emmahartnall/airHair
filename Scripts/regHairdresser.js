@@ -1,6 +1,6 @@
 // Get the checkbox and the content elements
-const toggleCheckbox = document.getElementById('toggleCheckbox');
-const toggleContent = document.getElementById('toggleContent');
+const toggleCheckbox = document.getElementById('hairdresserCheckBox');
+const toggleContent = document.getElementById('hairdresserFields');
 
 // Add an event listener to the checkbox
 toggleCheckbox.addEventListener('change', function() {
