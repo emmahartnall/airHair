@@ -1,0 +1,24 @@
+.twistie {
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+}
+
+.twistie::before {
+    content: "▶"; /* Closed twistie icon */
+    display: inline-block;
+    margin-right: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.twistie.open::before {
+    content: "▼"; /* Open twistie icon */
+}
+
+.sub-list {
+    display: none; /* Hide sublist by default */
+}
+
+.sub-list.open {
+    display: block; /* Show sublist when open */
+}

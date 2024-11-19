@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="styles/classes.css" />
         <link rel="stylesheet" href="styles/ids.css" />"
         <link rel="stylesheet" href="Styles/layouts.css"/>
+        <link rel="stylesheet" href="styles/twistie.css"/>"
     </head>
     <body>
         <header>
@@ -40,59 +41,69 @@
         </nav>
         <div class="gridLayout">
             <aside>
-                <b>Please select services below to determine price and appointment length.</b>
-                <div class="gridInput">
-                    <label for="cut">Cut</label>
-                    <input type="checkbox" id="cut" >
-                    
-                    <label for="hair-wash">Wash</label>
-                    <input type="checkbox" id="hair-wash" >
+                <div class="formImitation">
+                    <div class="grid-one-column">
+                        <b>Please select services below to determine price and appointment length.</b>
+                        <div class="gridInput">
+                            <label for="cut">Cut</label>
+                            <input type="checkbox" id="cut" >
+                            
+                            <label for="hair-wash">Wash</label>
+                            <input type="checkbox" id="hair-wash" >
 
-                    <label for="dry">Blow Dry</label>
-                    <input type="checkbox" id="dry" >
-                    
-                    <label for="styling">New hair style</label>
-                    <input type="checkbox" id="styling" >
+                            <label for="dry">Blow Dry</label>
+                            <input type="checkbox" id="dry" >
+                            
+                            <label for="styling">New hair style</label>
+                            <input type="checkbox" id="styling" >
 
-                    <label for="advice">Style advice</label>
-                    <input type="checkbox" id="advice" >
+                            <label for="advice">Style advice</label>
+                            <input type="checkbox" id="advice" >
 
-                    <label>Hair style</label>
-                    <select id="style" >
-                        <option value="" disabled selected>Select Style</option>
-                        <option value="Bob">Bob</option>
-                        <option value="crew cut">Crew cut</option>
-                        <option value="short back and sides">Short back and sides</option>
-                        <option value="layers">long layers</option>
-                    </select>
-                    
-                    <label for="drive">Drive to your home</label>
-                    <input type="checkbox" id="drive" >
-                    
-                    <label for="massage">Scalp Massage</label>
-                    <input type="checkbox" id="massage" >
-                    
-                    <label for="chair">Heated Chair</label>
-                    <input type="checkbox" id="chair" >
-                    
-                    <label for="drink">Beverage</label>
-                    <input type="checkbox" id="drink">
-                    
-                    <label for="treatment">Treatment</label>
-                    <input type="checkbox" id="treatment">
-                    
-                    <label for="coloring">Colour</label>
-                    <input type="checkbox" id="coloring">
-                    
-                    <label for="highlights">Highlights</label>
-                    <input type="checkbox" id="highlights">
-                    
-                    <label for="perm">Perm</label>
-                    <input type="checkbox" id="perm">
-                    
-                    <label for="straightening">Straightening</label>
-                    <input type="checkbox" id="products">
-                </div>  
+                            <label>Hair style</label>
+                            <select id="style" >
+                                <option value="" disabled selected>Select Style</option>
+                                <option value="Bob">Bob</option>
+                                <option value="crew cut">Crew cut</option>
+                                <option value="short back and sides">Short back and sides</option>
+                                <option value="layers">long layers</option>
+                            </select>
+                        </div>
+
+                        <span class="twistie">Perm</span>
+                        <div class="sub-list">
+                            <div class="gridInput">
+                                <label for="straightening">Straightening</label>
+                                <input type="checkbox" id="products">
+                            </div>
+                        </div>
+                        
+                        <span class="twistie">Colouring</span>
+                        <div class="sub-list">
+                            <div class="gridInput">
+                                <label for="highlights">Highlights</label>
+                                <input type="checkbox" id="highlights">
+                            </div>
+                        </div>
+
+                        <span class="twistie">Other services</span>
+                        <div class="sub-list">
+                            <div class="gridInput">
+                                <label for="drive">Drive to your home</label>
+                                <input type="checkbox" id="drive" >
+                                
+                                <label for="massage">Scalp Massage</label>
+                                <input type="checkbox" id="massage" >
+                                
+                                <label for="chair">Heated Chair</label>
+                                <input type="checkbox" id="chair" >
+                                
+                                <label for="drink">Beverage</label>
+                                <input type="checkbox" id="drink">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </aside>
             <main>
                 <div class="formImitation">
@@ -112,5 +123,6 @@
         <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
         <script src="Scripts/dateSet.js"></script>
         <script src="Scripts/login.js"></script>
+        <script src="Scripts/twistie.js"></script>"
     </body>
 </html>

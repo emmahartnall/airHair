@@ -48,6 +48,12 @@
     grid-auto-rows: auto;
     height: 100vh; /* Full height layout */
   }
+.grid-one-column{
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px; /* Spacing between items */
+    padding: 20px;
+}
   
 .header-container {
     display: flex;
