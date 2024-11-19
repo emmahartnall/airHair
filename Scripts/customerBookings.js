@@ -87,7 +87,7 @@
 
     // Add a button to the content div
     const button = document.createElement('button');
-    button.textContent = 'Confirm';
+    button.textContent = 'Confirm appointment';
 
     // Append the button to the content div
     contentDiv.appendChild(button);

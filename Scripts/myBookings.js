@@ -77,6 +77,13 @@
     appointmentStatusDiv.textContent = 'Booking status: requested';
     contentDiv.appendChild(appointmentStatusDiv);
 
+    // Add a button to the content div
+    const button = document.createElement('button');
+    button.textContent = 'cancel appointment';
+
+    // Append the button to the content div
+    contentDiv.appendChild(button);
+
     // Append the content div to the main container
     mainDiv.appendChild(contentDiv);
 

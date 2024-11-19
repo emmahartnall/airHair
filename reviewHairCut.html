@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Compare</title>
+    <link rel="icon" href="images/hairCompareicon.png"/>
+    <link rel="stylesheet" href="styles/classes.css" />
+    <link rel="stylesheet" href="Styles/basicElements.css"/>
+    <link rel="stylesheet" href="Styles/layouts.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <h1>Hair Compare - Prototype</h1>
+                <h2>Customers - Find an appointment at a time that suits you.</h2>
+                <h2>Hairdressers - Manage your services.</h2>
+            </div>
+            <div class="gridLayoutOneColumn">
+                <button id="loginButton" onclick="window.location.href='./Login.html'">Login</button>
+                <span id="displayUsername"></span>
+                <button id="logoutButton" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </header>
+    <nav class="tabs">
+        <a href="home.html" class="tab">Home Page</a>
+        <a href="userProfile.html" class="tab">Your Details</a>
+        <a href="myBookings.html" class="tab">Bookings</a>
+        <a href="developmentTeam.html" class="tab">Contact</a>
+    </nav>
+    <main>
+        <section class="submit-review">
+            <h2>Haircut Review</h2>
+            <p>Share your experience</p>
+            <form id="reviewForm">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Select a rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Average</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Terrible</option>
+                </select>
+                
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+                
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hair Compare. All rights reserved.</p>
+    </footer>
+    <script src="Scripts/photoUpload.js"></script>
+    <script src="Scripts/login.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

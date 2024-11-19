@@ -66,6 +66,16 @@
     photo.textContent = 'photo';
     contentDiv.appendChild(photo);
 
+    // Add a button to the content div
+    const button = document.createElement('button');
+    button.textContent = 'Review haircut';
+    button.addEventListener('click', function () {
+      window.location.href = 'reviewHaircut.html';
+  });
+
+    // Append the button to the content div
+    contentDiv.appendChild(button);
+
     // Append the content div to the main container
     mainDiv.appendChild(contentDiv);
 
