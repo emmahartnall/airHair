@@ -30,7 +30,7 @@
             <a href="home.html" class="tab">Home Page</a>
             <a href="userProfile.html" class="tab active">Your Details</a>
             <a href="myBookings.html" class="tab">Bookings</a>
-            <a href="developmentTeam.html" class="tab">Contact</a>
+            <a href="developmentTeam.html" class="tab">Contact Us</a>
         </nav>
         <div class="formImitation">
             <div class="gridInput">
@@ -38,16 +38,53 @@
                 <input type="text" id="first_name"  placeholder="first name" required>
 
                 <label for="last_name">last name:</label>
-                <input type="text" id="last_name"  placeholder="last name" required
+                <input type="text" id="last_name"  placeholder="last name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" >
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" >
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonbinary">Non-binary</option>
+                    <option value="other">Other</option>
+                    <option value="preferNotToSay">Prefer not to say</option>
+                </select>
+
+                <label for="hair-type">Hair Type:</label>
+                <select id="hair-type" name="hair-type" >
+                    <option value="" disabled selected>Select your hair type</option>
+                    <option value="straight">Straight</option>
+                    <option value="wavy">Wavy</option>
+                    <option value="curly">Curly</option>
+                    <option value="coily">Coily</option>
+                </select>
+
+                <label for="hair-colour">Hair Colour:</label>
+                <select id="hair-colour" name="hair-colour" >
+                    <option value="" disabled selected>Select your hair colour</option>
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                    <option value="blonde">Blonde</option>
+                    <option value="red">Red</option>
+                    <option value="gray">Gray</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="hair-length">Current Hair Length:</label>
+                <select id="hair-length" name="hair-length" >
+                    <option value="" disabled selected>Select your hair length</option>
+                    <option value="short">Short (Above shoulders)</option>
+                    <option value="medium">Medium (Shoulder length)</option>
+                    <option value="long">Long (Below shoulders)</option>
+                </select>  
+
+                
 
                 <label for="hairdresserCheckBox">Would you like to provide hair services?</label>
                 <input type="checkbox" id="hairdresserCheckBox">
             </div>
 
-            <div id="hairdresserFields" sytle="display: none;"> 
+            <div id="hairdresserFields" style="display: none;"> 
                 <div class="gridInput">    
 
                     <label for="name">Location:</label>
@@ -94,6 +131,8 @@
             </div>
 
             <div class="gridInput">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" >
 
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" >
@@ -102,45 +141,7 @@
                 <input type="text" id="address" name="address" placeholder="Enter your address" >
 
                 <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
-
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" >
-                    <option value="" disabled selected>Select your gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="nonbinary">Non-binary</option>
-                    <option value="other">Other</option>
-                    <option value="preferNotToSay">Prefer not to say</option>
-                </select>
-
-                <label for="hair-type">Hair Type:</label>
-                <select id="hair-type" name="hair-type" >
-                    <option value="" disabled selected>Select your hair type</option>
-                    <option value="straight">Straight</option>
-                    <option value="wavy">Wavy</option>
-                    <option value="curly">Curly</option>
-                    <option value="coily">Coily</option>
-                </select>
-
-                <label for="hair-colour">Hair Colour:</label>
-                <select id="hair-colour" name="hair-colour" >
-                    <option value="" disabled selected>Select your hair colour</option>
-                    <option value="black">Black</option>
-                    <option value="brown">Brown</option>
-                    <option value="blonde">Blonde</option>
-                    <option value="red">Red</option>
-                    <option value="gray">Gray</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="hair-length">Current Hair Length:</label>
-                <select id="hair-length" name="hair-length" >
-                    <option value="" disabled selected>Select your hair length</option>
-                    <option value="short">Short (Above shoulders)</option>
-                    <option value="medium">Medium (Shoulder length)</option>
-                    <option value="long">Long (Below shoulders)</option>
-                </select>  
+                <input type="date" id="dob" name="dob">
             </div>
         </div>
 
