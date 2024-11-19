@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="styles/classes.css" />
         <link rel="stylesheet" href="styles/ids.css" />
         <link rel="stylesheet" href="Styles/basicElements.css"/>
+        <link rel="stylesheet" href="Styles/layouts.css"/>
     </head>
     <body>
         <header>
@@ -35,27 +36,14 @@
             <a href="myBookings.html" class="tab">Bookings</a>
             <a href="developmentTeam.html" class="tab">Contact</a>
         </nav>
-        <div class="maincontent">
-            <div class="topdiv">
-                <form id="booking-form">
-                    <div class="form-group-grid">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" required>
-                
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Your email" required>
-                    
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
-                
-                        <label for="time">Preferred Time:</label>
-                        <input type="time" id="time" name="time" required>
-                    
-                        <button type="submit">Book appointment</button>
-                    </div>
-                </form>
+    
+        <form id="booking-form">
+            <div class="gridinput">
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
             </div>
-        </div>
+            <button type="submit">Book appointment</button>
+        </form>
 
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
