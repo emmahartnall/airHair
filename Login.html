@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/classes.css" />
         <link rel="stylesheet" href="styles/ids.css" />
         <link rel="stylesheet" href="Styles/basicElements.css"/>
+        <link rel="stylesheet" href="styles/layouts.css"/>
     </head>
     <body>
         <header>
@@ -25,20 +26,20 @@
             <a href="myBookings.html" class="tab">Bookings</a>
             <a href="developmentTeam.html" class="tab">Contact</a>
         </nav>
-        <div class="container">
-            <div class="formImitation">
-                <h2>Login</h2>
-                <form id="loginForm">
-                    <div class="form-group-grid">
-                        <label for="userName">User Name:</label>
-                        <input type="text" id="userName" required>
-                        <label for="password">Password:</label>
-                        <input type="password" id="password">
-                    </div>
-                    <button onclick="login()">Login</button>
-                </form>
+        
+           
+        
+        <form id="loginForm">
+            <h2>Login</h2>
+            <div class="gridInput">
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password">
             </div>
-        </div>
+            <button onclick="login()">Login</button>
+        </form>
+            
         <footer>
             <p>&copy; 2024 Hair Compare. All rights reserved.</p>
         </footer>
